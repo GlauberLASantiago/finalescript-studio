@@ -1,0 +1,2683 @@
+[
+  {
+    "title": "8th note tool",
+    "description": "Chooses the Eighth Note tool ( Simple Entry tool ).",
+    "synonyms": "eighth\n\n8th",
+    "parameters": "(none)",
+    "examples": [
+      "8th note tool",
+      "eighth"
+    ]
+  },
+  {
+    "title": "16th note tool",
+    "description": "Chooses the 16th Note tool ( Simple Entry tool ).",
+    "synonyms": "16th",
+    "parameters": "(none)",
+    "examples": [
+      "16th note tool",
+      "16th"
+    ]
+  },
+  {
+    "title": "32nd note tool",
+    "description": "Chooses the 32nd Note tool ( Simple Entry tool ).",
+    "synonyms": "32nd",
+    "parameters": "(none)",
+    "examples": [
+      "32nd note tool",
+      "32nd"
+    ]
+  },
+  {
+    "title": "64th note tool",
+    "description": "Chooses the 64th Note tool ( Simple Entry tool ).",
+    "synonyms": "64th",
+    "parameters": "(none)",
+    "examples": [
+      "64th note tool",
+      "64th"
+    ]
+  },
+  {
+    "title": "128th note tool",
+    "description": "Chooses the 128th Note tool ( Simple Entry tool ).",
+    "synonyms": "128th",
+    "parameters": "(none)",
+    "examples": [
+      "128th note tool",
+      "128th"
+    ]
+  },
+  {
+    "title": "active layer only",
+    "description": "Selects Document > Show Active Layer Only , updates the layout, and redraws the document.",
+    "synonyms": "hide other layers",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "active layer only",
+      "don't hide other layers"
+    ]
+  },
+  {
+    "title": "adjust dot for multiple voices",
+    "description": "Selects Adjust dot for multiple voices in the Document Options - Augmentation Dots dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "adjust dot for multiple voices",
+      "uncheck adjust dot for multiple voices"
+    ]
+  },
+  {
+    "title": "alert",
+    "description": "See dialog .",
+    "synonyms": "",
+    "parameters": "",
+    "examples": []
+  },
+  {
+    "title": "allow primary beam within a space",
+    "description": "Selects Allow primary beam within a space in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "allow primary beam within a space",
+      "disable allow primary beam within a space"
+    ]
+  },
+  {
+    "title": "allow rests to float",
+    "description": "Selects Allow rests to float in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "float rests\n\nmove rests",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "allows rests to float",
+      "float no rests"
+    ]
+  },
+  {
+    "title": "always slash flagged grace notes",
+    "description": "Selects Always slash flagged grace notes in the Document Options - Grace Notes dialog box , updates the layout, and redraws the document.",
+    "synonyms": "slash grace notes",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "always slash flagged grace notes",
+      "uncheck slash grace notes"
+    ]
+  },
+  {
+    "title": "apply page format",
+    "description": "Chooses the Page Layout tool , selects Page Layout > Redefine Pages > All Pages of Current Part/Score and sets the specified page range, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last",
+    "examples": [
+      "apply page format",
+      "apply page format 8",
+      "apply page format 2 to 6",
+      "apply page format start to 5",
+      "apply page format 10 end"
+    ]
+  },
+  {
+    "title": "apply plug-in",
+    "description": "Executes the specified plug-in (according to the exact menu item name).",
+    "synonyms": "apply plugin\n\napply pi\n\nrun plug-in\n\nrun plugin\n\nrun pi\n\nplug-in\n\nplugin\n\npi",
+    "parameters": "string1",
+    "examples": [
+      "apply plug-in \"Split Measure...\"",
+      "pi \"Flat Beams\""
+    ]
+  },
+  {
+    "title": "apply staff style",
+    "description": "Applies the specified staff style to the selected region (merging with previously-applied staff styles if present), updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "string1",
+    "examples": [
+      "apply staff style \"15. Stemless Notes\""
+    ]
+  },
+  {
+    "title": "articulation tool",
+    "description": "Chooses the Articulation tool .",
+    "synonyms": "articulation\n\nartic",
+    "parameters": "(none)",
+    "examples": [
+      "articulation tool",
+      "artic"
+    ]
+  },
+  {
+    "title": "ask destination folder",
+    "description": "Displays a Browse For Folder dialog box to allow the user to choose the batch process destination folder.",
+    "synonyms": "ask batch process destination folder\n\nask batch destination\n\nask sv dir",
+    "parameters": "(none)",
+    "examples": [
+      "ask destination folder",
+      "ask sv dir"
+    ]
+  },
+  {
+    "title": "ask source folder",
+    "description": "Displays a Browse For Folder dialog box to allow the user to choose the batch process source folder.",
+    "synonyms": "ask batch process source folder\n\nask batch source\n\nask load dir",
+    "parameters": "(none)",
+    "examples": [
+      "ask source folder",
+      "ask load dir"
+    ]
+  },
+  {
+    "title": "avoid collision of",
+    "description": "Selects global collision avoidance options in the Document Options - Music Spacing dialog box , updates the layout, and redraws the document.",
+    "synonyms": "prevent collisions",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "avoid collision of chords lyrics",
+      "don't prevent ledgerline collisions",
+      "avoid collision of no unisons"
+    ]
+  },
+  {
+    "title": "base slope on end notes only",
+    "description": "Sets global Beaming Style to Base Slope on End Notes Only in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "base slope on end notes only"
+    ]
+  },
+  {
+    "title": "batch process destination folder",
+    "description": "Sets the batch process destination folder to the specified path.",
+    "synonyms": "destination folder\n\nsave folder\n\nsave location\n\nsv dir",
+    "parameters": "string1",
+    "examples": [
+      "batch process destination folder \" C:\\Users\\GPdPalestrina\\Music\\ \"",
+      "sv dir"
+    ]
+  },
+  {
+    "title": "batch process folder",
+    "description": "Instructs FinaleScript to apply the subsequent commands to documents in the batch process source folder and save the documents in the batch process destination folder.",
+    "synonyms": "process folder\n\nbatch process\n\ndo dir",
+    "parameters": "(none)",
+    "examples": [
+      "batch process folder",
+      "do dir"
+    ]
+  },
+  {
+    "title": "batch process folder and subfolders",
+    "description": "Instructs FinaleScript to apply the subsequent commands to the documents in both the batch process source folder and any subfolders and save the documents in the batch process destination folder.",
+    "synonyms": "batch process subfolders\n\nprocess subfolders\n\ndo dir subfolders\n\ndo subfolders",
+    "parameters": "(none)",
+    "examples": [
+      "batch process folder and subfolders",
+      "do subfolders"
+    ]
+  },
+  {
+    "title": "batch process source folder",
+    "description": "Sets the batch process source folder to the specified path.",
+    "synonyms": "source folder\n\nload folder\n\nbatch source\n\nload dir",
+    "parameters": "string1",
+    "examples": [
+      "batch process source folder \" C:\\Users\\GPdPalestrina\\Music\\Updated\\ \"",
+      "load dir"
+    ]
+  },
+  {
+    "title": "beam four eighth notes together in common time",
+    "description": "Selects Beam four eighth notes together in common time in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "beam 8th common",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "beam four eighth notes together in common time",
+      "no beam 8th common"
+    ]
+  },
+  {
+    "title": "beam three eighth notes before/after an eighth rest",
+    "description": "Selects Beam three eighth notes before/after an eighth rest in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "beam 8th rest",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "beam three eighth notes before/after an eighth rest",
+      "don't beam 8th rest"
+    ]
+  },
+  {
+    "title": "break multimeasure rest",
+    "description": "Chooses Edit > Multimeasure Rests > Break .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "break multimeasure rest"
+    ]
+  },
+  {
+    "title": "broken beam length",
+    "description": "Sets the global Broken Beam Length in the Document Options - Beams dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "broken beam length 0.0625",
+      "broken beam length 4.5 pts"
+    ]
+  },
+  {
+    "title": "button",
+    "description": "Clicks the button with the specified label in the current dialog box.",
+    "synonyms": "click button",
+    "parameters": "string1",
+    "examples": [
+      "button \"Composite\"",
+      "click button \"More Options\""
+    ]
+  },
+  {
+    "title": "button delete",
+    "description": "Clicks the button with the label \"Delete\" in the current dialog box.",
+    "synonyms": "See also: click",
+    "parameters": "(none)",
+    "examples": [
+      "button delete"
+    ]
+  },
+  {
+    "title": "button save",
+    "description": "Clicks the button with the label \"Save\" in the current dialog box.",
+    "synonyms": "See also: click",
+    "parameters": "(none)",
+    "examples": [
+      "button save"
+    ]
+  },
+  {
+    "title": "button select",
+    "description": "Clicks the button with the label \"Select\" in the current dialog box.",
+    "synonyms": "See also: click",
+    "parameters": "(none)",
+    "examples": [
+      "button select"
+    ]
+  },
+  {
+    "title": "cancel outgoing key signature",
+    "description": "Selects Cancel outgoing key signature in the Document Options - Key Signatures dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "cancel outgoing key signature",
+      "uncheck cancel outgoing key signature"
+    ]
+  },
+  {
+    "title": "change font",
+    "description": "Uses Text Search and Replace to replace all occurrences of the first specified font with the second specified font, updates the corresponding settings in the Document Options - Fonts dialog box , updates the layout, and redraws the document, and reports the number of occurrences found.",
+    "synonyms": "swap fonts",
+    "parameters": "string1\n\nstring2\n\nfont1\n\nfont2",
+    "examples": [
+      "change font [Times New Roman] [Centaur]",
+      "swap fonts \"Maestro\" \"Jazz\""
+    ]
+  },
+  {
+    "title": "change page format",
+    "description": "Changes the page format to the specified orientation and/or to the specified size (either by name or by width and height values using the current or specified measurement unit), updates the layout, and redraws the document.",
+    "synonyms": "change format\n\nformat",
+    "parameters": "num1\n\nnum2\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "change page format 10 13 in",
+      "change format landscape tabloid",
+      "format quarto"
+    ]
+  },
+  {
+    "title": "change transposition",
+    "description": "Sets the staff transposition either for the selected staves or for the entire document to the specified key signature transposition and the specified number of octaves up or down, updates the layout, and redraws the document.",
+    "synonyms": "instrument transposition\n\nstaff transposition\n\ntranspose instrument\n\ntranspose staff\n\ntransp st",
+    "parameters": "num1",
+    "examples": [
+      "change transposition bb",
+      "staff transposition minus octave",
+      "transpose instrument f tenor",
+      "transp st 2 8ve up"
+    ]
+  },
+  {
+    "title": "check",
+    "description": "Clicks checkbox with the specified name in the active dialog box.",
+    "synonyms": "checkbox\n\nactivate\n\nenable\n\nuse",
+    "parameters": "string1",
+    "examples": [
+      "check \"Center horizontally\"",
+      "enable \"Hide key signature and show*\""
+    ]
+  },
+  {
+    "title": "check ties",
+    "description": "Chooses Utilities > Check Notation > Check Ties .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "check ties"
+    ]
+  },
+  {
+    "title": "chord style",
+    "description": "Changes the global chord style to the specified style and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "standard\n\neuropean\n\ngerman\n\nroman\n\nnashville a\n\nnashville b\n\nsolfeggio\n\nscandinavian",
+    "examples": [
+      "chord style solfeggio"
+    ]
+  },
+  {
+    "title": "chord tool",
+    "description": "Chooses the Chord tool .",
+    "synonyms": "chord",
+    "parameters": "(none)",
+    "examples": [
+      "chord tool",
+      "chord"
+    ]
+  },
+  {
+    "title": "clear",
+    "description": "Chooses Edit > Clear All Items .",
+    "synonyms": "delete music\n\ndelete notes\n\ncl",
+    "parameters": "(none)",
+    "examples": [
+      "clear",
+      "delete music",
+      "cl"
+    ]
+  },
+  {
+    "title": "clear selected items",
+    "description": "Chooses Edit > Clear Selected Items .",
+    "synonyms": "cl sel items",
+    "parameters": "(none)",
+    "examples": [
+      "clear selected items",
+      "cl sel items"
+    ]
+  },
+  {
+    "title": "clear staff style",
+    "description": "Clears either the specified staff style or all staff styles from the selected region, updates the layout, and redraws the document.",
+    "synonyms": "clear staff styles",
+    "parameters": "string1",
+    "examples": [
+      "clear staff style \"07. One-Bar Repeat\"",
+      "clear staff style"
+    ]
+  },
+  {
+    "title": "clef change offset",
+    "description": "Sets the global Default Clef Change Offset in the Document Options - Clefs dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "clef change adjustment\n\nclef change distance\n\nclef change positioning",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "clef change offset -8",
+      "clef change distance -0.03125 in"
+    ]
+  },
+  {
+    "title": "clef change reduction",
+    "description": "Sets the global Default Clef Change Percent Reduction in the Document Options - Clefs dialog box to the specified value in percentage, updates the layout, and redraws the document.",
+    "synonyms": "clef change size",
+    "parameters": "num1",
+    "examples": [
+      "clef change reduction 75",
+      "clef change size 110"
+    ]
+  },
+  {
+    "title": "clef tool",
+    "description": "Chooses the Clef tool .",
+    "synonyms": "clef",
+    "parameters": "(none)",
+    "examples": [
+      "clef tool",
+      "clef"
+    ]
+  },
+  {
+    "title": "click",
+    "description": "Simulates a single- or double-click of the mouse at the current mouse position, at the specified location ( num1 , num2 ), or on the control with the specified label ( string1 ), respecting any present modifier key attributes.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\nnum2\n\nstring1",
+    "examples": [
+      "ctrl click",
+      "double click",
+      "click",
+      "click 800 350",
+      "click \"New Part\""
+    ]
+  },
+  {
+    "title": "click (label)",
+    "description": "Clicks the button with the specified label.",
+    "synonyms": "(none)",
+    "parameters": "ok\n\ncancel\n\nset font\n\ndelete\n\nsave\n\nselect",
+    "examples": [
+      "click ok",
+      "click set font"
+    ]
+  },
+  {
+    "title": "close",
+    "description": "Chooses File > Close or File > Close All .",
+    "synonyms": "cl",
+    "parameters": "all",
+    "examples": [
+      "close\ncl all"
+    ]
+  },
+  {
+    "title": "close barline at end of each system",
+    "description": "Selects Close barline at end of each system in the Document Options - Barlines dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "close barline at end of each system",
+      "don't close barline at end of each system"
+    ]
+  },
+  {
+    "title": "close barline at end of piece",
+    "description": "Selects Close barline at end of piece in the Document Options - Barlines dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "close barline at end of piece",
+      "disable close barline at end of piece"
+    ]
+  },
+  {
+    "title": "composer",
+    "description": "Writes the specified text to the Composer field in File Info .",
+    "synonyms": "(none)",
+    "parameters": "string1",
+    "examples": [
+      "composer \"Anonymous Jones\""
+    ]
+  },
+  {
+    "title": "copy",
+    "description": "Chooses Edit > Copy .",
+    "synonyms": "cp",
+    "parameters": "(none)",
+    "examples": [
+      "copy",
+      "cp"
+    ]
+  },
+  {
+    "title": "copyright",
+    "description": "Writes the specified text to the Copyright field in File Info .",
+    "synonyms": "(none)",
+    "parameters": "string1",
+    "examples": [
+      "copyright \"Â© 2015 Musica Mediocris.\""
+    ]
+  },
+  {
+    "title": "create multimeasure rests",
+    "description": "Chooses Edit > Multimeasure Rests > Create .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "create multimeasure rests"
+    ]
+  },
+  {
+    "title": "create staff",
+    "description": "Creates the specified number of treble clef (default) or bass clef staves with the specified full and abbreviated staff names at the bottom of the instrument list, updates the layout, and redraws the document.",
+    "synonyms": "create staves\n\ncreate st\n\ncreate instrument\n\ncreate instruments\n\ncreate inst\n\nadd staff\n\nadd staves\n\nadd st\n\nadd instrument\n\nadd instruments\n\nadd inst",
+    "parameters": "num1\n\nstring1\n\nstring2\n\nbass\n\ngrand",
+    "examples": [
+      "create staff",
+      "add 2 staves",
+      "create 4 bass instruments",
+      "add grand staff",
+      "create st \"Hurdy-gurdy\"",
+      "add inst \"Nose Flute\" \"N. Fl.\""
+    ]
+  },
+  {
+    "title": "crescendo tool",
+    "description": "Chooses the Crescendo tool ( Smart Shape tool ).",
+    "synonyms": "crescendo\n\ncresc\n\nhairpin",
+    "parameters": "(none)",
+    "examples": [
+      "crescendo tool",
+      "hairpin"
+    ]
+  },
+  {
+    "title": "cursor",
+    "description": "Sets cursor position to the specified horizontal and vertical locations, measured in pixels from the top-left of the screen.",
+    "synonyms": "pointer",
+    "parameters": "num1\n\nnum2",
+    "examples": [
+      "cursor 20 50",
+      "mouse 867 5309"
+    ]
+  },
+  {
+    "title": "dashed slur tool",
+    "description": "Chooses the Dashed Curve tool ( Smart Shape tool ).",
+    "synonyms": "dashed slur\n\ndashed phrase\n\ndashed bow",
+    "parameters": "(none)",
+    "examples": [
+      "dashed slur tool",
+      "dashed phrase"
+    ]
+  },
+  {
+    "title": "decrescendo tool",
+    "description": "Chooses the Decrescendo tool ( Smart Shape tool ).",
+    "synonyms": "decrescendo\n\ndecresc\n\ndiminuendo",
+    "parameters": "(none)",
+    "examples": [
+      "decrescendo tool",
+      "decresc",
+      "diminuendo"
+    ]
+  },
+  {
+    "title": "default clef",
+    "description": "Sets the first clef to the specified clef either for the selected staves or for the entire document, updates the layout, and redraws the document.",
+    "synonyms": "default clefs\n\nstart clef\n\nstart clefs\n\nbeginning clef\n\nbeginning clefs\n\nfirst clef\nfirst clefs",
+    "parameters": "bass / f\ntreble / g\nalto / c\ntenor",
+    "examples": [
+      "default clef treble",
+      "start f clef",
+      "first clef tenor"
+    ]
+  },
+  {
+    "title": "default measure numbers",
+    "description": "Removes all measure number adjustments from the selected region, updates the layout, and redraws the document.",
+    "synonyms": "reset measure numbers\n\nrs meas num",
+    "parameters": "(none)",
+    "examples": [
+      "default measure numbers",
+      "rs meas num"
+    ]
+  },
+  {
+    "title": "delete chords",
+    "description": "Removes all chord symbols either in the selected region or for the entire document, updates the layout, and redraws the document.",
+    "synonyms": "remove chords\n\nclear chords\n\ndel chords\n\ncl chords",
+    "parameters": "(none)",
+    "examples": [
+      "delete chords",
+      "del chords"
+    ]
+  },
+  {
+    "title": "delete lyrics",
+    "description": "Removes all lyrics either in the selected region or for the entire document, updates the layout, and redraws the document.",
+    "synonyms": "remove lyrics\n\nclear lyrics\n\ndel lyrics\n\ncl lyrics",
+    "parameters": "(none)",
+    "examples": [
+      "delete lyrics",
+      "cl lyrics"
+    ]
+  },
+  {
+    "title": "delete measure",
+    "description": "Chooses the Selection tool , selects all measures, all staves in the specified range of measures, scrolls to the beginning of the selection, redraws the document, and chooses Edit > Delete Measure Stack .",
+    "synonyms": "delete measures\n\ndelete bar\n\ndelete bars\n\ndel meas\n\ndel bar\n\nremove measure\n\nremove measures\n\nremove bar\n\nremove bars",
+    "parameters": "num1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last",
+    "examples": [
+      "delete measure 47",
+      "remove bars 17 to 32",
+      "del meas first 89",
+      "del end bar"
+    ]
+  },
+  {
+    "title": "delete staff",
+    "description": "Chooses the Staff tool , selects the specified staff or staves, and chooses Staff > Delete Staves and Reposition .",
+    "synonyms": "delete staves\n\ndelete instrument\n\ndelete instruments\n\ndel inst\n\ndel st\n\nremove staff\n\nremove staves\n\nremove instrument\n\nremove instruments",
+    "parameters": "num1\n\nnum2\n\nstring1\n\nstring2\n\nstart / beginning / top / first\nend / bottom / last",
+    "examples": [
+      "delete staff \"Sackbut\"",
+      "delete staves \"Piccolo Heckelphone\" to \"Contrabass Sarrusophone\"",
+      "del inst top to \"Ophicleide\"",
+      "remove instrument 11",
+      "remove instruments 5 to last",
+      "remove staff 2 3"
+    ]
+  },
+  {
+    "title": "description",
+    "description": "Writes the specified text to the Description field in File Info .",
+    "synonyms": "(none)",
+    "parameters": "string1",
+    "examples": [
+      "description \"Font annotation file required for music font used in this document\""
+    ]
+  },
+  {
+    "title": "deselect",
+    "description": "Chooses the Selection tool , sets the selected region to no measures and staves, and redraws the document.",
+    "synonyms": "unselect\n\nno selection",
+    "parameters": "(none)",
+    "examples": [
+      "deselect",
+      "no selection"
+    ]
+  },
+  {
+    "title": "dialog",
+    "description": "Displays a dialog box with either the specified text or the default text \"OK to keep executing this script?\" with either OK/Cancel buttons or Yes/No buttons.",
+    "synonyms": "message\n\nalert",
+    "parameters": "string1\n\nyes",
+    "examples": [
+      "message \"This is a dialog box, no?\" yes",
+      "alert"
+    ]
+  },
+  {
+    "title": "display clef only on first staff system",
+    "description": "Selects Display clef only on first staff system in the Document Options - Clefs dialog box , updates the layout, and redraws the document.",
+    "synonyms": "show first clef only",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display clef only on first staff system",
+      "don't show first clef only"
+    ]
+  },
+  {
+    "title": "display courtesy key signature",
+    "description": "Selects Display courtesy key signature at end of staff system in the Document Options - Key Signatures dialog box , updates the layout, and redraws the document.",
+    "synonyms": "show courtesy key\n\nshow courtesy accidentals",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display courtesy key signature",
+      "show no courtesy accidentals"
+    ]
+  },
+  {
+    "title": "display key signature only on first staff system",
+    "description": "Selects Display key signature only on first staff system in the Document Options - Key Signatures dialog box , updates the layout, and redraws the document.",
+    "synonyms": "show first key only\n\nshow first accidentals only",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display key signature only on first staff system",
+      "disable show first key only"
+    ]
+  },
+  {
+    "title": "display courtesy clef at end of staff system",
+    "description": "Selects Display courtesy clef at end of staff system in the Document Options - Clefs dialog box , updates the layout, and redraws the document.",
+    "synonyms": "show courtesy clef",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display courtesy clef at end of staff system",
+      "uncheck show courtesy clef"
+    ]
+  },
+  {
+    "title": "display courtesy time signature at end of staff system",
+    "description": "Selects Display courtesy time signature at end of staff system in the Document Options - Time Signatures dialog box , updates the layout, and redraws the document.",
+    "synonyms": "show courtesy time",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display courtesy time signature at end of staff system",
+      "do not show courtesy time"
+    ]
+  },
+  {
+    "title": "display in concert pitch",
+    "description": "Selects Document > Display in Concert Pitch .",
+    "synonyms": "concert pitch\n\nreal pitches\n\nabsolute pitches",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display in concert pitch",
+      "uncheck real pitches"
+    ]
+  },
+  {
+    "title": "distance",
+    "description": "See spacing .",
+    "synonyms": "",
+    "parameters": "",
+    "examples": []
+  },
+  {
+    "title": "document options",
+    "description": "Displays the Document Options dialog box .",
+    "synonyms": "document opts\n\ndoc options\n\ndoc opts",
+    "parameters": "(none)",
+    "examples": [
+      "document options",
+      "doc opts"
+    ]
+  },
+  {
+    "title": "don't process active document",
+    "description": "Instructs FinaleScript not to apply the subsequent commands to the active document.",
+    "synonyms": "don't process current\n\nno do main",
+    "parameters": "(none)",
+    "examples": [
+      "don't process active document",
+      "no do main"
+    ]
+  },
+  {
+    "title": "dot tool",
+    "description": "Chooses the Dot tool ( Simple Entry tool ).",
+    "synonyms": "dot",
+    "parameters": "(none)",
+    "examples": [
+      "dot tool",
+      "dot"
+    ]
+  },
+  {
+    "title": "double whole note tool",
+    "description": "Chooses the Double Whole Note tool ( Simple Entry tool ).",
+    "synonyms": "double whole",
+    "parameters": "(none)",
+    "examples": [
+      "double whole note tool",
+      "double whole"
+    ]
+  },
+  {
+    "title": "edit filter",
+    "description": "Chooses Edit > Edit Filter .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": []
+  },
+  {
+    "title": "edit measure attributes",
+    "description": "Chooses Edit > Edit Measure Attributes .",
+    "synonyms": "edit bar attributes\n\nmeas attr\n\nbar attr",
+    "parameters": "(none)",
+    "examples": [
+      "edit measure attributes",
+      "bar attr"
+    ]
+  },
+  {
+    "title": "edit measure numbers",
+    "description": "Chooses Measure > Edit Measure Number Regions .",
+    "synonyms": "edit bar numbers\n\nedit meas num\n\nedit bar num",
+    "parameters": "(none)",
+    "examples": [
+      "edit measure numbers",
+      "edit bar num"
+    ]
+  },
+  {
+    "title": "edit multimeasure rests",
+    "description": "Chooses Edit > Multimeasure Rests > Edit .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "edit multimeasure rests"
+    ]
+  },
+  {
+    "title": "edit staff attributes",
+    "description": "Chooses Staff > Edit Staff Attributes .",
+    "synonyms": "staff attributes\n\nst attr",
+    "parameters": "(none)",
+    "examples": [
+      "edit staff attributes",
+      "st attr"
+    ]
+  },
+  {
+    "title": "english language",
+    "description": "Switches to the English version of the FinaleScript keyword dictionary.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "english language"
+    ]
+  },
+  {
+    "title": "eraser tool",
+    "description": "Chooses the Eraser tool ( Simple Entry tool ).",
+    "synonyms": "eraser",
+    "parameters": "(none)",
+    "examples": [
+      "eraser tool",
+      "eraser"
+    ]
+  },
+  {
+    "title": "export page",
+    "description": "Chooses Graphics > Export Pages .",
+    "synonyms": "export pages\n\nexport pg",
+    "parameters": "(none)",
+    "examples": [
+      "export page",
+      "export pg"
+    ]
+  },
+  {
+    "title": "expression tool",
+    "description": "Chooses the Expression tool .",
+    "synonyms": "expression\n\nexpr",
+    "parameters": "(none)",
+    "examples": [
+      "expression tool",
+      "expr"
+    ]
+  },
+  {
+    "title": "extend beams over rests",
+    "description": "Selects Extend beams over rests in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "extend beams over rests",
+      "don't extend beams over rests"
+    ]
+  },
+  {
+    "title": "extend secondary beams over rests",
+    "description": "Selects Extend secondary beams over rests in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "extend secondary beams over rests",
+      "extend no secondary beams over rests"
+    ]
+  },
+  {
+    "title": "fill with rests",
+    "description": "Chooses Utilities > Check Notation > Fill with Rests .",
+    "synonyms": "fill with silence",
+    "parameters": "(none)",
+    "examples": [
+      "fill with rests"
+    ]
+  },
+  {
+    "title": "fit",
+    "description": "Forces either the selected region or the entire document into the specified number of measures per system, recalculates systems and measures, updates the layout, and redraws the document.",
+    "synonyms": "force",
+    "parameters": "num1",
+    "examples": [
+      "fit 4",
+      "force 6"
+    ]
+  },
+  {
+    "title": "fit in window",
+    "description": "Chooses View > Zoom > Fit in Window .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "fit in window"
+    ]
+  },
+  {
+    "title": "flat tool",
+    "description": "Chooses the Flat tool ( Simple Entry tool ).",
+    "synonyms": "flat",
+    "parameters": "(none)",
+    "examples": [
+      "flat tool",
+      "flat"
+    ]
+  },
+  {
+    "title": "flatten all beams",
+    "description": "Sets global Beaming Style to Flatten All Beams in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "flatten all beams"
+    ]
+  },
+  {
+    "title": "flatten beams based on standard note",
+    "description": "Sets global Beaming Style to Flatten Beams Based on Standard Note in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "flatten beams based on standard note"
+    ]
+  },
+  {
+    "title": "flatten beams based on extreme note",
+    "description": "Sets global Beaming Style to Flatten Beams Based on Extreme Note in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "flatten beams based on extreme note"
+    ]
+  },
+  {
+    "title": "glissando tool",
+    "description": "Chooses the Glissando tool ( Smart Shape tool ).",
+    "synonyms": "glissando\n\ngliss",
+    "parameters": "(none)",
+    "examples": [
+      "glissando tool",
+      "gliss"
+    ]
+  },
+  {
+    "title": "grace note size",
+    "description": "Sets the global Grace Note Size in the Document Options - Grace Notes dialog box to the specified percentage, updates the layout, and redraws the document.",
+    "synonyms": "grace size\n\ngrace reduction",
+    "parameters": "num1",
+    "examples": [
+      "grace note size 60",
+      "grace reduction 75"
+    ]
+  },
+  {
+    "title": "grace note tool",
+    "description": "Chooses the Grace Note tool ( Simple Entry tool ).",
+    "synonyms": "grace",
+    "parameters": "(none)",
+    "examples": [
+      "grace note tool",
+      "grace"
+    ]
+  },
+  {
+    "title": "graphics tool",
+    "description": "Chooses the Graphics tool .",
+    "synonyms": "graphics\n\ngrph\n\ngr",
+    "parameters": "(none)",
+    "examples": [
+      "graphics tool",
+      "gr"
+    ]
+  },
+  {
+    "title": "half note tool",
+    "description": "Chooses the Half Note tool ( Simple Entry tool ).",
+    "synonyms": "half",
+    "parameters": "(none)",
+    "examples": [
+      "half note tool",
+      "half"
+    ]
+  },
+  {
+    "title": "half step down tool",
+    "description": "Chooses the Half Step Down tool ( Simple Entry tool ).",
+    "synonyms": "half step down\n\nminus half step",
+    "parameters": "(none)",
+    "examples": [
+      "half step down tool",
+      "minus half step"
+    ]
+  },
+  {
+    "title": "half step up tool",
+    "description": "Chooses the Half Step Up tool ( Simple Entry tool ).",
+    "synonyms": "half step up\n\nplus half step",
+    "parameters": "(none)",
+    "examples": [
+      "half step up tool",
+      "plus half step"
+    ]
+  },
+  {
+    "title": "hand grabber tool",
+    "description": "Chooses the Hand Grabber tool .",
+    "synonyms": "hand",
+    "parameters": "(none)",
+    "examples": [
+      "hand grabber tool",
+      "hand"
+    ]
+  },
+  {
+    "title": "hide fretboards",
+    "description": "Deselects Chord > Show Fretboards .",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "hide fretboards",
+      "don't hide fretboards"
+    ]
+  },
+  {
+    "title": "hide measure numbers",
+    "description": "Hides measure numbers for each measure in the selected region, updates the layout, and redraws the document.",
+    "synonyms": "hide meas num\n\nhide bar numbers\n\nhide bar num",
+    "parameters": "(none)",
+    "examples": [
+      "hide measure numbers",
+      "hide bar num"
+    ]
+  },
+  {
+    "title": "hide palette",
+    "description": "Overrides the deselected Don't show Palette when calling a script from the menu setting in the FinaleScript Options dialog box .",
+    "synonyms": "don't show palette",
+    "parameters": "(none)",
+    "examples": [
+      "hide palette",
+      "don't show palette"
+    ]
+  },
+  {
+    "title": "horizontal adjustment for upstem flags",
+    "description": "Sets the global Horizontal Adjustment for Upstem Flags in the Document Options - Augmentation Dots dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "horizontal adjustment for upstem flags 0",
+      "horizontal adjustment for upstem flags 4 evpus"
+    ]
+  },
+  {
+    "title": "human playback",
+    "description": "Sets the Human Playback Style in the Playback Settings dialog box to the specified style.",
+    "synonyms": "hp",
+    "parameters": "none / disable / no\nstandard\nbaroque\nclassical\nromantic\n21st century\nmarching band\nviennese / walz / valse\nlight\nfunk\njazz\nlatin\npop\nreggae\nrock\nsamba",
+    "examples": [
+      "human playback standard",
+      "hp funk",
+      "disable hp"
+    ]
+  },
+  {
+    "title": "hyperscribe tool",
+    "description": "Chooses the HyperScribe tool .",
+    "synonyms": "hyperscribe",
+    "parameters": "(none)",
+    "examples": [
+      "hyperscribe tool",
+      "hyperscribe"
+    ]
+  },
+  {
+    "title": "import options",
+    "description": "Copies specified settings ( Document Options dialog box , Preferences-Human Playback dialog box , Smart Shape Options dialog box , Extract Parts dialog box , Category Designer dialog box ) from the active document to all other documents being processed, updates the layout, and redraws the document.",
+    "synonyms": "import opts\n\nimport settings\n\nimport active",
+    "parameters": "all / house style",
+    "examples": [
+      "import all options",
+      "import house style",
+      "import clef options",
+      "import opts beams lines stems",
+      "import active categories"
+    ]
+  },
+  {
+    "title": "import page format",
+    "description": "Copies all settings in the Page Format for Score dialog box , Page Format for Parts dialog box , or both from the active document to all other documents being processed, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "score\n\nparts",
+    "examples": [
+      "import page format",
+      "import page format for score",
+      "import page format parts"
+    ]
+  },
+  {
+    "title": "include rests when beaming in groups of four",
+    "description": "Selects Include rests when beaming in groups of four in the Document Options - Beams dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "include rests when beaming in groups of four",
+      "don't include rests when beaming in groups of four"
+    ]
+  },
+  {
+    "title": "insert",
+    "description": "Chooses Edit > Insert .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "insert"
+    ]
+  },
+  {
+    "title": "insert staff",
+    "description": "Inserts the specified number of treble clef (default) or bass clef staves with the specified full and abbreviated staff names above the selected region, updates the layout, and redraws the document.",
+    "synonyms": "insert staves\n\ninsert st\n\ninsert instrument\n\ninsert instruments\n\ninsert inst",
+    "parameters": "num1\n\nstring1\n\nstring2\n\nbass\n\ngrand",
+    "examples": [
+      "insert staff",
+      "insert 2 staves",
+      "insert 4 bass instruments",
+      "insert grand staff",
+      "insert st \"Dudelsack\"",
+      "insert inst \"Contrabass Balalaika\" \"Cb. Bal.\""
+    ]
+  },
+  {
+    "title": "key",
+    "description": "Transposes either the selected region or the entire document to the specified key, updates the layout, and redraws the document.",
+    "synonyms": "transpose\n\ntransp",
+    "parameters": "major / maj\nminor\nc flat / cb\nc\nc sharp / c#\nd flat / db\nd\nd sharp / d#\ne flat / eb\ne\nf\nf sharp / f#\ng flat / gb\ng\ng sharp / g#\na flat / ab\na\na sharp / a#\nb flat / bb\nb",
+    "examples": [
+      "key f# major",
+      "transpose b flat minor",
+      "transp d maj"
+    ]
+  },
+  {
+    "title": "key signature tool",
+    "description": "Chooses the Key Signature tool .",
+    "synonyms": "key tool",
+    "parameters": "(none)",
+    "examples": [
+      "key signature tool",
+      "key tool"
+    ]
+  },
+  {
+    "title": "launch window",
+    "description": "Chooses File > Launch Window .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "launch window"
+    ]
+  },
+  {
+    "title": "layer only",
+    "description": "Switches to the specified layer, selects Document > Show Active Layer Only , updates the layout, and redraws the document.",
+    "synonyms": "l only\n\nwork on layer\n\nwork l\n\nshow layer\n\nshow l",
+    "parameters": "num1",
+    "examples": [
+      "layer 2 only",
+      "work on layer 3",
+      "show l 1"
+    ]
+  },
+  {
+    "title": "lock system",
+    "description": "Locks systems either containing the selected measures or throughout the entire document, updates the layout, and redraws the document.",
+    "synonyms": "lock systems\n\nlock sys\n\nfreeze system\n\nfreeze systems",
+    "parameters": "no / don't / do not",
+    "examples": [
+      "lock systems",
+      "freeze system",
+      "don't lock system"
+    ]
+  },
+  {
+    "title": "lyrics tool",
+    "description": "Chooses the Lyrics tool .",
+    "synonyms": "lyrics\n\nlyric",
+    "parameters": "(none)",
+    "examples": [
+      "lyrics tool",
+      "lyrics"
+    ]
+  },
+  {
+    "title": "mass edit tool",
+    "description": "See selection tool .",
+    "synonyms": "",
+    "parameters": "",
+    "examples": []
+  },
+  {
+    "title": "maximum distance from middle staff line",
+    "description": "Sets the global Maximum Distance From Middle Staff Line in the Document Options - Beams dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "max dist middle",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "maximum distance from middle staff line 0",
+      "max dist middle 6 evpus"
+    ]
+  },
+  {
+    "title": "maximum slope",
+    "description": "Sets the global Maximum Slope in the Document Options - Beams dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "max slope",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "maximum slope 0.0625",
+      "max slope 3 pts"
+    ]
+  },
+  {
+    "title": "measure",
+    "description": "Scrolls to the specified measure.",
+    "synonyms": "meas\n\nbar",
+    "parameters": "num1",
+    "examples": [
+      "measure 49",
+      "bar 602"
+    ]
+  },
+  {
+    "title": "measure tool",
+    "description": "Chooses the Measure tool .",
+    "synonyms": "measure\n\nmeas\n\nbar",
+    "parameters": "(none)",
+    "examples": [
+      "measure tool",
+      "bar"
+    ]
+  },
+  {
+    "title": "measure width",
+    "description": "Sets the global maximum or minimum measure width in the Document Options - Music Spacing dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "meas width\n\nbar width",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "maximum measure width 6 in",
+      "min bar width 2 picas"
+    ]
+  },
+  {
+    "title": "menu item",
+    "description": "Chooses the specified menu item.",
+    "synonyms": "menu command\n\nexecute\n\nexec",
+    "parameters": "string1\n\ncheck / enable\nuncheck / disable",
+    "examples": [
+      "menu item \"File/New/Default Document\"",
+      "exec \"default document\"",
+      "check menu command \"Display in Concert Pitch\"",
+      "disable menu item \"display in con*\""
+    ]
+  },
+  {
+    "title": "message",
+    "description": "See dialog .",
+    "synonyms": "",
+    "parameters": "",
+    "examples": []
+  },
+  {
+    "title": "midi tool",
+    "description": "Chooses the MIDI tool .",
+    "synonyms": "midi\n\nmid",
+    "parameters": "(none)",
+    "examples": [
+      "midi tool",
+      "midi"
+    ]
+  },
+  {
+    "title": "minimum distance between items",
+    "description": "Sets the global Minimum Distance Between Items in the Document Options - Music Spacing dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "minimum distance\n\nmin dist",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "minimum distance between items 12",
+      "min dist 0.5 sp"
+    ]
+  },
+  {
+    "title": "minimum distance between notes with ties",
+    "description": "Sets the global Minimum Distance Between Notes with Ties in the Document Options - Music Spacing dialog box to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "minimum notes ties\n\nmin note tie",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "minimum distance between notes with ties 2",
+      "min note tie 0.16667 in"
+    ]
+  },
+  {
+    "title": "move layer",
+    "description": "Moves the contents of the first specified layer into the second specified layer either for the selected region or for the entire document, updates the layout, and redraws the document.",
+    "synonyms": "move layers\n\nmove l",
+    "parameters": "num1\n\nnum2",
+    "examples": [
+      "move layer 2 to 3",
+      "move layers 1 2",
+      "move l 3 1"
+    ]
+  },
+  {
+    "title": "music font",
+    "description": "Sets the default music font to the specified font, size, and style with corresponding values in the Document Options - Fonts dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\nfont1 / string1\nbold",
+    "examples": [
+      "music font [Maestro] 24",
+      "music font \"Petrucci\" bold"
+    ]
+  },
+  {
+    "title": "natural tool",
+    "description": "Chooses the Natural tool ( Simple Entry tool ).",
+    "synonyms": "natural",
+    "parameters": "(none)",
+    "examples": [
+      "natural tool",
+      "natural"
+    ]
+  },
+  {
+    "title": "new default document",
+    "description": "Chooses File > New > Default Document and switches focus to new document.",
+    "synonyms": "new default\n\nnew\n\nn",
+    "parameters": "(none)",
+    "examples": [
+      "new default document",
+      "new",
+      "n"
+    ]
+  },
+  {
+    "title": "new document with setup wizard",
+    "description": "Chooses File > New > Document with Setup Wizard and switches focus to new document.",
+    "synonyms": "setup wizard\n\nsetup wz\n\nnew wz\n\nn wz",
+    "parameters": "(none)",
+    "examples": [
+      "new document with setup wizard",
+      "setup wizard",
+      "n wz"
+    ]
+  },
+  {
+    "title": "normal stem length",
+    "description": "Sets the global Normal Stem Length in Document Options - Stems dialog box at the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "stems length",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "normal stem length 84",
+      "stems length 0.325 in"
+    ]
+  },
+  {
+    "title": "note mover tool",
+    "description": "Chooses the Note Mover tool .",
+    "synonyms": "note mover",
+    "parameters": "(none)",
+    "examples": [
+      "note mover tool",
+      "note mover"
+    ]
+  },
+  {
+    "title": "dialog box",
+    "description": "Chooses File > Open .",
+    "synonyms": "open dialog\n\nopen db\n\no db\n\no ?",
+    "parameters": "(none)",
+    "examples": [
+      "open dialog box",
+      "o db"
+    ]
+  },
+  {
+    "title": "ossia tool",
+    "description": "Chooses the Ossia tool .",
+    "synonyms": "ossia",
+    "parameters": "(none)",
+    "examples": [
+      "ossia tool",
+      "ossia"
+    ]
+  },
+  {
+    "title": "page",
+    "description": "Scrolls to the first measure in the specified page.",
+    "synonyms": "pg",
+    "parameters": "num1",
+    "examples": [
+      "page 27",
+      "pg 1"
+    ]
+  },
+  {
+    "title": "page layout tool",
+    "description": "Chooses the Page Layout tool .",
+    "synonyms": "page layout\n\npg layt\n\nlayout\n\nlayt",
+    "parameters": "(none)",
+    "examples": [
+      "page layout tool",
+      "pg layt",
+      "layout"
+    ]
+  },
+  {
+    "title": "page margin",
+    "description": "Applies a single margin value at a time to either the selected pages or the entire document using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "pg margin",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "page margin left 0.5",
+      "pg margin bottom 1 cm"
+    ]
+  },
+  {
+    "title": "page view",
+    "description": "Chooses View > Page View .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "page view"
+    ]
+  },
+  {
+    "title": "paste",
+    "description": "Chooses Edit > Paste .",
+    "synonyms": "replace entries\n\nreplace\n\nrepl entr\n\nrepl",
+    "parameters": "(none)",
+    "examples": [
+      "paste",
+      "replace entries"
+    ]
+  },
+  {
+    "title": "play",
+    "description": "Plays the entire active document from the first measure.",
+    "synonyms": "playback\n\nlisten",
+    "parameters": "(none)",
+    "examples": [
+      "play",
+      "listen"
+    ]
+  },
+  {
+    "title": "preferences",
+    "description": "Chooses Edit > Preferences .",
+    "synonyms": "prefs\n\nprogram options\n\nprog opts",
+    "parameters": "(none)",
+    "examples": [
+      "preferences",
+      "prog opts"
+    ]
+  },
+  {
+    "title": "press",
+    "description": "Simulates striking the specified alphanumeric key once, respecting any present modifier key attributes.",
+    "synonyms": "strike\n\nhit",
+    "parameters": "num1\n\nstring1",
+    "examples": [
+      "press \"f\"",
+      "strike ctrl 4",
+      "hit numpad 0"
+    ]
+  },
+  {
+    "title": "press arrow",
+    "description": "Simulates striking the specified arrow key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike arrow\n\nhit arrow\n\narrow key",
+    "parameters": "num1",
+    "examples": [
+      "press up arrow",
+      "strike left arrow 3",
+      "hit ctrl down arrow"
+    ]
+  },
+  {
+    "title": "press delete",
+    "description": "Simulates striking the DELETE key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike delete\n\nhit delete\n\ndelete key",
+    "parameters": "num1",
+    "examples": [
+      "press delete",
+      "strike delete 3",
+      "hit shift delete"
+    ]
+  },
+  {
+    "title": "press end",
+    "description": "Simulates striking the END key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike end\n\nhit end\n\nend key",
+    "parameters": "num1",
+    "examples": [
+      "press end",
+      "strike end 3",
+      "hit ctrl end"
+    ]
+  },
+  {
+    "title": "press enter",
+    "description": "Simulates striking the ENTER key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike enter\n\nhit enter\n\nenter key\n\nenter",
+    "parameters": "num1",
+    "examples": [
+      "press enter",
+      "strike enter 3",
+      "hit alt enter"
+    ]
+  },
+  {
+    "title": "press home",
+    "description": "Simulates striking the HOME key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike home\n\nhit home\n\nhome key",
+    "parameters": "num1",
+    "examples": [
+      "press home",
+      "strike home 3",
+      "hit ctrl home"
+    ]
+  },
+  {
+    "title": "press page down",
+    "description": "Simulates striking the PAGE DOWN key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike page down\n\nhit page down\n\npage down key\n\npage down",
+    "parameters": "num1",
+    "examples": [
+      "press page down",
+      "strike page down 3",
+      "hit shift page down"
+    ]
+  },
+  {
+    "title": "press page up",
+    "description": "Simulates striking the PAGE UP key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike page up\n\nhit page up\n\npage up key\n\npage up",
+    "parameters": "num1",
+    "examples": [
+      "press page up",
+      "strike page up 3",
+      "hit shift page up"
+    ]
+  },
+  {
+    "title": "press return",
+    "description": "Simulates striking the RETURN key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike return\n\nhit return\n\nreturn key\n\nreturn",
+    "parameters": "num1",
+    "examples": [
+      "press return",
+      "strike return 3",
+      "hit alt return"
+    ]
+  },
+  {
+    "title": "press spacebar",
+    "description": "Simulates striking the SPACEBAR key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike spacebar\n\nhit spacebar\n\nspacebar key\n\nspacebar",
+    "parameters": "num1",
+    "examples": [
+      "press spacebar",
+      "strike spacebar 3",
+      "hit ctrl spacebar"
+    ]
+  },
+  {
+    "title": "press tab",
+    "description": "Simulates striking the TAB key the specified number of times (default is 1), respecting any present modifier key attributes.",
+    "synonyms": "strike tab\n\nhit tab\n\ntab key\n\ntab",
+    "parameters": "num1",
+    "examples": [
+      "press tab",
+      "strike tab 3",
+      "hit shift tab"
+    ]
+  },
+  {
+    "title": "print",
+    "description": "Prints the specified page range of the active document according to the specified layout options.",
+    "synonyms": "p",
+    "parameters": "num1\n\nnum2\n\nstring1",
+    "examples": [
+      "print",
+      "p",
+      "print \"1-3, 5\"",
+      "print from 4",
+      "print 8 end",
+      "print beginning 6",
+      "print to 10",
+      "print 7 11",
+      "print left",
+      "print 15 30 odd"
+    ]
+  },
+  {
+    "title": "print booklet",
+    "description": "Prints the active document as a 2-up booklet paginating based on the specified number of pages.",
+    "synonyms": "print spread",
+    "parameters": "num1\n\nrecto\n\nverso",
+    "examples": [
+      "print booklet",
+      "print booklet 8",
+      "print booklet recto",
+      "print booklet 12 verso"
+    ]
+  },
+  {
+    "title": "print dialog box",
+    "description": "Chooses File > Print .",
+    "synonyms": "print dialog\n\nprint db\n\np db\n\np ?",
+    "parameters": "(none)",
+    "examples": [
+      "print dialog box",
+      "p db"
+    ]
+  },
+  {
+    "title": "process all open",
+    "description": "Instructs FinaleScript to apply the subsequent commands to all open documents.",
+    "synonyms": "batch process open\n\nprocess open",
+    "parameters": "(none)",
+    "examples": [
+      "process all open",
+      "process open"
+    ]
+  },
+  {
+    "title": "quarter note tool",
+    "description": "Chooses the Quarter Note tool ( Simple Entry tool ).",
+    "synonyms": "quarter\n\n4ter",
+    "parameters": "(none)",
+    "examples": [
+      "quarter note tool",
+      "quarter"
+    ]
+  },
+  {
+    "title": "quit",
+    "description": "Chooses File > Exit .",
+    "synonyms": "q",
+    "parameters": "(none)",
+    "examples": [
+      "quit",
+      "q"
+    ]
+  },
+  {
+    "title": "rebar",
+    "description": "Chooses Utilities > Rebar > Rebar Music .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "rebar"
+    ]
+  },
+  {
+    "title": "rebeam",
+    "description": "Chooses Utilities > Rebeam > Rebeam Music .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "rebeam"
+    ]
+  },
+  {
+    "title": "redefine page",
+    "description": "Chooses the Page Layout tool and selects the corresponding option from the Page Layout > Redefine Pages submenu.",
+    "synonyms": "redefine pages\n\nredefine pg\n\napply page format",
+    "parameters": "right\n\nleft\n\ncurrent",
+    "examples": [
+      "redefine pages",
+      "redefine current page",
+      "redefine left pages"
+    ]
+  },
+  {
+    "title": "redo",
+    "description": "Chooses Edit > Redo .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "redo"
+    ]
+  },
+  {
+    "title": "redraw",
+    "description": "Chooses View > Redraw Screen .",
+    "synonyms": "redr\n\nr\n\nupdate\n\nupdt\n\nupd\n\nrefresh",
+    "parameters": "(none)",
+    "examples": [
+      "redraw",
+      "r",
+      "update",
+      "refresh"
+    ]
+  },
+  {
+    "title": "remove manual slur adjustments",
+    "description": "Chooses Utilities > Check Notation > Remove Manual Slur Adjustments .",
+    "synonyms": "del slur edits\n\ncl slur edits",
+    "parameters": "(none)",
+    "examples": [
+      "remove manual slur adjustments",
+      "cl slur edits"
+    ]
+  },
+  {
+    "title": "remove stem direction changes",
+    "description": "Chooses Utilities > Stem Direction > Use Default Direction .",
+    "synonyms": "del stem edits\n\ncl stem edits",
+    "parameters": "(none)",
+    "examples": [
+      "remove stem direction changes",
+      "del stem edits"
+    ]
+  },
+  {
+    "title": "reorganize layout",
+    "description": "Recalculates systems and measures, unfreezes measures, respaces measures, updates the layout, and redraws the document.",
+    "synonyms": "reorganize\n\nreorg layt\n\nreorg",
+    "parameters": "(none)",
+    "examples": [
+      "reorganize layout",
+      "reorg"
+    ]
+  },
+  {
+    "title": "repeat tool",
+    "description": "Chooses the Repeat tool .",
+    "synonyms": "repeat\n\nrepeats",
+    "parameters": "(none)",
+    "examples": [
+      "repeat tool",
+      "repeat"
+    ]
+  },
+  {
+    "title": "repitch tool",
+    "description": "Chooses the Repitch tool ( Simple Entry tool ).",
+    "synonyms": "repitch",
+    "parameters": "(none)",
+    "examples": [
+      "repitch tool",
+      "repitch"
+    ]
+  },
+  {
+    "title": "report fonts",
+    "description": "Generates a report listing all fonts used in the active document.",
+    "synonyms": "font report",
+    "parameters": "(none)",
+    "examples": [
+      "report fonts",
+      "font report"
+    ]
+  },
+  {
+    "title": "resize fretboards",
+    "description": "Resizes the global Scale All Fretboards By setting in the Document Options - Chords dialog box to the specified percentage and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1",
+    "examples": [
+      "resize fretboards 125"
+    ]
+  },
+  {
+    "title": "resize page",
+    "description": "Resizes either the pages within the selected region or all pages to the specified percentage, updates the layout, and redraws the document.",
+    "synonyms": "resize pages\n\nresize pg",
+    "parameters": "num1",
+    "examples": [
+      "resize pages 50",
+      "resize pg 104"
+    ]
+  },
+  {
+    "title": "resize staff",
+    "description": "Resizes either the staff/staves within the selected region or all staves to the specified percentage, updates the layout, and redraws the document.",
+    "synonyms": "resize staves\n\nresize st",
+    "parameters": "num1",
+    "examples": [
+      "resize staves 75",
+      "resize st 200"
+    ]
+  },
+  {
+    "title": "resize system",
+    "description": "Resizes either the system(s) containing the selected region or all systems to the specified percentage (respects system locks), updates the layout, and redraws the document.",
+    "synonyms": "resize systems\n\nresize sys",
+    "parameters": "num1",
+    "examples": [
+      "resize systems 85",
+      "resize sys 120"
+    ]
+  },
+  {
+    "title": "resize tool",
+    "description": "Chooses the Resize tool .",
+    "synonyms": "resize",
+    "parameters": "(none)",
+    "examples": [
+      "resize tool",
+      "resize"
+    ]
+  },
+  {
+    "title": "respace",
+    "description": "Chooses Utilities > Music Spacing > Apply Note Spacing to Current Part/Score .",
+    "synonyms": "resp",
+    "parameters": "(none)",
+    "examples": [
+      "respace",
+      "resp"
+    ]
+  },
+  {
+    "title": "respace to beats",
+    "description": "Chooses Utilities > Music Spacing > Apply Beat Spacing to Current Part/Score .",
+    "synonyms": "beat spacing\n\nbt sp",
+    "parameters": "(none)",
+    "examples": [
+      "respace to beats",
+      "bt sp"
+    ]
+  },
+  {
+    "title": "respace to time signature",
+    "description": "Chooses Utilities > Music Spacing > Apply Time Signature Spacing to Current Part/Score ; if no measures are selected, spacing is applied to the entire document.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "respace to time signature"
+    ]
+  },
+  {
+    "title": "respell notes",
+    "description": "Chooses Utilities > Respell Notes .",
+    "synonyms": "respell",
+    "parameters": "(none)",
+    "examples": [
+      "respell notes",
+      "respell"
+    ]
+  },
+  {
+    "title": "retranscribe",
+    "description": "Chooses MIDI/Audio > Retranscribe .",
+    "synonyms": "transcribe",
+    "parameters": "(none)",
+    "examples": [
+      "retranscribe",
+      "transcribe"
+    ]
+  },
+  {
+    "title": "reverse margins",
+    "description": "Swaps existing left and right page margins between the even and odd pages of a document.",
+    "synonyms": "inverse margins",
+    "parameters": "(none)",
+    "examples": [
+      "reverse margins",
+      "inverse margins"
+    ]
+  },
+  {
+    "title": "save",
+    "description": "Saves the active document in MUSX (default) or MIDI format, either overwriting an existing file, creating a new file via File > Save As , or creating a new file with the specified text added to the filename.",
+    "synonyms": "sv",
+    "parameters": "string1\n\nappend / add\nas\nmidi / mid",
+    "examples": [
+      "save",
+      "save append \" for Electric Dulcimer\"",
+      "save midi",
+      "save as",
+      "sv mid add \" - midi only\""
+    ]
+  },
+  {
+    "title": "save dialog box",
+    "description": "Chooses File > Save as .",
+    "synonyms": "save db\n\nsv db\n\nsv ?",
+    "parameters": "(none)",
+    "examples": [
+      "save dialog box",
+      "sv db"
+    ]
+  },
+  {
+    "title": "scale manual positioning of notes",
+    "description": "Chooses Scale manual positioning of notes in the Document Options - Notes and Rests dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / none",
+    "examples": [
+      "scale manual positioning of notes",
+      "don't scale manual positioning of notes"
+    ]
+  },
+  {
+    "title": "scroll view",
+    "description": "Chooses View > Scroll View .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "scroll view"
+    ]
+  },
+  {
+    "title": "search replace",
+    "description": "Performs Text Search and Replace within the constraints of the supplied parameters (if no markings or text inserts are specified, TSAR searches every element containing text), updates the layout, redraws the document, and reports the number of occurrences found.",
+    "synonyms": "find replace\n\nsrch repl\n\nfind repl",
+    "parameters": "string1\n\nstring2\n\nfont1\n\nfont2\n\nnum1\n\nnum2",
+    "examples": [
+      "search \"rhythym\" replace \"rhythm\"",
+      "find [Comic Sans MS] replace [Any Other Font]",
+      "srch expressions [Maestro] 24 repl [Maestro] 20",
+      "find copyright \"(c)\" match case repl \"Â©\"",
+      "search blocks \"Bb\" replace \"B^b\" reset tracking"
+    ]
+  },
+  {
+    "title": "secondary group adjustment",
+    "description": "Sets the global Secondary Group Adjustment in the Document Options - Flags dialog box at the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "secondary group adjustment 6",
+      "secondary group adjustment 1.5 sp"
+    ]
+  },
+  {
+    "title": "select (measures)",
+    "description": "Chooses the Selection tool , selects the specified measure range in all staves, scrolls to the beginning of the selection, and redraws the document.",
+    "synonyms": "sel\n\nhighlight\n\nchoose",
+    "parameters": "num1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last\nno / don't / do not / none",
+    "examples": [
+      "select 27",
+      "highlight 3 to 5",
+      "sel beginning to 10",
+      "choose 18 end",
+      "select none"
+    ]
+  },
+  {
+    "title": "select (staves)",
+    "description": "Chooses the Staff tool , selects the specified staff range, and redraws the document.",
+    "synonyms": "sel\n\nhighlight\n\nchoose",
+    "parameters": "string1\n\nstring2\n\nstart / beginning / top / first\nend / bottom / last\nno / don't / do not / none",
+    "examples": [
+      "select \"Banjolele\"",
+      "choose \"Clavicytherium\" to \"Didgeridoo\"",
+      "no highlight"
+    ]
+  },
+  {
+    "title": "select all",
+    "description": "Selects the entire document and redraws the document.",
+    "synonyms": "sel all\n\nhighlight all",
+    "parameters": "(none)",
+    "examples": [
+      "select all",
+      "sel all"
+    ]
+  },
+  {
+    "title": "select dialog box",
+    "description": "Selects open window or dialog box with the specified name.",
+    "synonyms": "select window\n\nsel db",
+    "parameters": "string1",
+    "examples": [
+      "select window \"ScoreManager\"",
+      "sel db \"Edit Page Margins\""
+    ]
+  },
+  {
+    "title": "select drop-down menu",
+    "description": "Clicks drop-down menu option with the specified name in the active dialog box.",
+    "synonyms": "select drop-down\n\nsel drop-down\n\nchoose drop-down menu\n\nchoose drop-down\n\ndrop-down",
+    "parameters": "string1",
+    "examples": [
+      "select drop-down menu \"up\" near \"freeze stems\"",
+      "choose drop-down \"up octave\" near \"transposition\"",
+      "drop-down \"manually*\" near \"position notes\""
+    ]
+  },
+  {
+    "title": "select item from list",
+    "description": "Clicks list item (either categorical list or dropdown menu) with the specified name in the active dialog box.",
+    "synonyms": "select list\n\nchoose item from list\n\nchoose list\n\nsel list\n\nlist",
+    "parameters": "string1",
+    "examples": [
+      "select item from list \"Tempo Alterations\"",
+      "choose list \"Chromatically\"",
+      "sel list \"Lines and Curves\"",
+      "list \"Tablature\" near \"Notation\""
+    ]
+  },
+  {
+    "title": "select layer",
+    "description": "Chooses specified layer from View > Select Layer submenu.",
+    "synonyms": "select l\n\nchoose layer\n\nchoose l\n\nsel l",
+    "parameters": "num1",
+    "examples": [
+      "select layer 2",
+      "sel l 1"
+    ]
+  },
+  {
+    "title": "select measure",
+    "description": "Chooses the Selection tool , selects the specified measure range in all staves, scrolls to the beginning of the selection, and redraws the document.",
+    "synonyms": "select measures\n\nselect bar\n\nselect bars\n\nsel meas\n\nsel bar\n\nhighlight measure\n\nhighlight measures\n\nhighlight bar\n\nhighlight bars",
+    "parameters": "num1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last\nno / don't / do not / none",
+    "examples": [
+      "select measure 27",
+      "highlight bars 3 to 5",
+      "sel first meas to 10",
+      "highlight no measures",
+      "sel bar none"
+    ]
+  },
+  {
+    "title": "select page",
+    "description": "Chooses the Selection tool , selects all measures and all staves within the specified range of pages, and scrolls to the beginning of the selection.",
+    "synonyms": "select pages\n\nsel pg\n\nhighlight page\n\nhighlight pages",
+    "parameters": "num1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last",
+    "examples": [
+      "select page 2",
+      "highlight pages 3 to 5",
+      "select pages first to 7",
+      "sel pg 8 end"
+    ]
+  },
+  {
+    "title": "select radio button",
+    "description": "Clicks radio button with the specified name in the active dialog box.",
+    "synonyms": "choose radio button\n\nclick radio button\n\nsel radio\n\nradio button\n\nradio",
+    "parameters": "string1",
+    "examples": [
+      "select radio button \"Hold notes to original pitches\"",
+      "radio \"Never bracket beamed*\""
+    ]
+  },
+  {
+    "title": "select staff",
+    "description": "Chooses the Staff tool and selects all measures within the specified range of staves (by staff name or staff number).",
+    "synonyms": "select staves\n\nselect instrument\n\nselect instruments\n\nsel st\n\nsel inst\n\nhighlight staff\n\nhighlight staves\n\nhighlight instrument\n\nhighlight instruments",
+    "parameters": "string1\n\nstring2\n\nnum1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last",
+    "examples": [
+      "select staff \"Horn in F\"",
+      "highlight staves \"Viola\" to \"Cello\"",
+      "sel st 3 7",
+      "select instruments \"Marimba\" to bottom",
+      "sel inst first to 5"
+    ]
+  },
+  {
+    "title": "select system",
+    "description": "Chooses the Selection tool , selects all measures and all staves within the specified range of systems, and scrolls to the beginning of the selection.",
+    "synonyms": "select systems\n\nsel sys\n\nhighlight system\n\nhighlight systems",
+    "parameters": "num1\n\nnum2\n\nstart / beginning / top / first\nend / bottom / last",
+    "examples": [
+      "select system 4",
+      "highlight systems 3 to 5",
+      "select systems first to 10",
+      "sel sys 18 end"
+    ]
+  },
+  {
+    "title": "select tab",
+    "description": "Clicks tab with the specified name in the active dialog box.",
+    "synonyms": "sel tab\n\nchoose tab\n\ntab",
+    "parameters": "string1",
+    "examples": [
+      "select tab \"File Info\"",
+      "tab \"Playback\""
+    ]
+  },
+  {
+    "title": "select window",
+    "description": "See select dialog box .",
+    "synonyms": "",
+    "parameters": "",
+    "examples": []
+  },
+  {
+    "title": "selection tool",
+    "description": "Chooses the Selection tool .",
+    "synonyms": "selection\n\nmass edit tool\n\nmass edit\n\nmass mover tool\n\nmass mover\n\nme",
+    "parameters": "(none)",
+    "examples": [
+      "selection tool",
+      "selection",
+      "mass edit tool",
+      "mass mover",
+      "me"
+    ]
+  },
+  {
+    "title": "sharp tool",
+    "description": "Chooses the Sharp tool ( Simple Entry tool ).",
+    "synonyms": "sharp",
+    "parameters": "(none)",
+    "examples": [
+      "sharp tool",
+      "sharp"
+    ]
+  },
+  {
+    "title": "shortened stem length",
+    "description": "Sets the global Shortened Stem Length in Document Options - Stems dialog box at the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "short stems length",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "shortened stem length 68",
+      "short stems length 0.25 in"
+    ]
+  },
+  {
+    "title": "show all layers",
+    "description": "Deselects Document > Show Active Layer Only .",
+    "synonyms": "show all l\n\nall layers\n\nall l",
+    "parameters": "(none)",
+    "examples": [
+      "show all layers",
+      "all l"
+    ]
+  },
+  {
+    "title": "show fretboards",
+    "description": "Selects Chord > Show Fretboards .",
+    "synonyms": "display fretboards",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "display fretboards",
+      "uncheck show fretboards"
+    ]
+  },
+  {
+    "title": "show measure numbers",
+    "description": "Displays measure numbers for each measure in the selected region, updates the layout, and redraws the document.",
+    "synonyms": "show meas num\n\nshow bar numbers\n\nshow bar num",
+    "parameters": "(none)",
+    "examples": [
+      "show measure numbers",
+      "show bar num"
+    ]
+  },
+  {
+    "title": "simple entry tool",
+    "description": "Chooses the Simple Entry tool .",
+    "synonyms": "simple entry\n\nsimple",
+    "parameters": "(none)",
+    "examples": [
+      "simple entry tool",
+      "simple"
+    ]
+  },
+  {
+    "title": "simple tuplet tool",
+    "description": "Chooses the Simple Tuplet tool ( Simple Entry tool ).",
+    "synonyms": "simple tuplet\n\nsimple triplet",
+    "parameters": "(none)",
+    "examples": [
+      "simple tuplet tool",
+      "simple tuplet"
+    ]
+  },
+  {
+    "title": "slur tool",
+    "description": "Chooses the Slur tool ( Smart Shape tool ).",
+    "synonyms": "slur\n\nphrase\n\nbow",
+    "parameters": "(none)",
+    "examples": [
+      "slur tool",
+      "phrase"
+    ]
+  },
+  {
+    "title": "smart shape tool",
+    "description": "Chooses the Smart Shape tool .",
+    "synonyms": "smart shapes\n\nsmart shape\n\nsmartshapes\n\nsmartshape",
+    "parameters": "(none)",
+    "examples": [
+      "smart shape tool",
+      "smartshapes"
+    ]
+  },
+  {
+    "title": "spacing",
+    "description": "Sets the global spacing setting for various elements in Document Options at the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "space\n\ndistance\n\ndist\n\nseparation",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "grace note spacing 24",
+      "space between dot and note 8 evpus",
+      "space between accidental and note 2 pts",
+      "space between dots 8",
+      "space between key signature accidentals 0",
+      "space after cancelled key 0",
+      "space before key signature 1 space",
+      "space after key signature 0.5 sp",
+      "spacing before clef 0.5 picas",
+      "spacing after clef 0",
+      "spacing before music 8 points",
+      "spacing after music 0",
+      "space before time signature 0.21167 centimeters",
+      "space after time signature 0.10583 cm",
+      "secondary beam separation 0.0625 inches",
+      "flag spacing 0.06944 in"
+    ]
+  },
+  {
+    "title": "specify current lyric",
+    "description": "Displays the Specify Current Lyric dialog box .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "specify current lyric"
+    ]
+  },
+  {
+    "title": "speedy",
+    "description": "Chooses the Speedy Entry tool .",
+    "synonyms": "spdy",
+    "parameters": "(none)",
+    "examples": [
+      "speedy"
+    ]
+  },
+  {
+    "title": "staff height",
+    "description": "Sets staff height either for the system(s) containing the selected region or for the entire document at the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "staffheight\n\nheight",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "staff height 0.375",
+      "height 82 evpus"
+    ]
+  },
+  {
+    "title": "staff name",
+    "description": "Changes the full or abbreviated staff name of the selected staff to the specified text, updates the layout, and redraws the document.",
+    "synonyms": "staff names\n\nst name\n\nst names\n\ninstrument name\n\ninstrument names\n\ninstr name\n\ninstr names\n\ninst name\n\ninst names",
+    "parameters": "string1\n\nstring2\n\nabbreviate / abbr",
+    "examples": [
+      "staff name \"Kazoo\"",
+      "abbr instr name \"Kz.\"",
+      "st name \"Kazoo\" \"Kz.\""
+    ]
+  },
+  {
+    "title": "staff tool",
+    "description": "Chooses the Staff tool .",
+    "synonyms": "staff",
+    "parameters": "(none)",
+    "examples": [
+      "staff tool",
+      "staff"
+    ]
+  },
+  {
+    "title": "start numbers at",
+    "description": "Sets the number of measures at which to start numbering multimeasure rests for the entire document at the specified value, updates the layout, and redraws the document.",
+    "synonyms": "start number\n\nstart num\n\nfirst number\n\nfirst num",
+    "parameters": "num1",
+    "examples": [
+      "start numbers at 2",
+      "first num 5"
+    ]
+  },
+  {
+    "title": "stem direction down",
+    "description": "Forces all stems in the selected region to face down.",
+    "synonyms": "stems down",
+    "parameters": "(none)",
+    "examples": [
+      "stem direction down",
+      "stems down"
+    ]
+  },
+  {
+    "title": "stem direction up",
+    "description": "Forces all stems in the selected region to face up.",
+    "synonyms": "stems up",
+    "parameters": "(none)",
+    "examples": [
+      "stem direction up",
+      "stems up"
+    ]
+  },
+  {
+    "title": "stop",
+    "description": "Interrupts the script and performs no further commands.",
+    "synonyms": "break\n\nend",
+    "parameters": "(none)",
+    "examples": [
+      "stop",
+      "break"
+    ]
+  },
+  {
+    "title": "studio view",
+    "description": "Chooses View > Studio View .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "studio view"
+    ]
+  },
+  {
+    "title": "swap layers",
+    "description": "Swaps all staff/measure contents either in the selected region or in the entire document between the specified layers, updates the layout, and redraws the document.",
+    "synonyms": "swap layer\n\nswap l\n\nexchange layers\n\nexchange layer\n\nexchange l",
+    "parameters": "num1\n\nnum2",
+    "examples": [
+      "swap layers 1 and 2",
+      "exchange l 3 4"
+    ]
+  },
+  {
+    "title": "switch to document",
+    "description": "Switches focus to specified document window and redraws document.",
+    "synonyms": "select document\n\nchoose document\n\ngo to document\n\nswitch to doc\n\nselect doc\n\nchoose doc\n\ngo to doc",
+    "parameters": "main / current / active\nprevious / prev\nnext",
+    "examples": [
+      "switch to previous document",
+      "select next doc",
+      "choose active document"
+    ]
+  },
+  {
+    "title": "system margin",
+    "description": "Applies a single margin value at a time to either the system(s) containing the selected measure(s) or the entire document using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "syst margin\n\nsys margin",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "right system margin 0.5",
+      "sys margin top 1 cm"
+    ]
+  },
+  {
+    "title": "tab slide tool",
+    "description": "Chooses the Tab Slide tool ( Smart Shape tool ).",
+    "synonyms": "slide",
+    "parameters": "(none)",
+    "examples": [
+      "tab slide tool",
+      "slide"
+    ]
+  },
+  {
+    "title": "text tool",
+    "description": "Chooses the Text tool .",
+    "synonyms": "text\n\ntxt",
+    "parameters": "(none)",
+    "examples": [
+      "text tool",
+      "text"
+    ]
+  },
+  {
+    "title": "tg tools",
+    "description": "Executes specified TG Tools menu item.",
+    "synonyms": "tgtools\n\ntg tool\n\ntgtool",
+    "parameters": "string1",
+    "examples": [
+      "tg tools \"smart playback\"",
+      "tgtool \"cross staff\""
+    ]
+  },
+  {
+    "title": "thickness",
+    "description": "Sets the global thickness setting for various elements in Document Options at the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "barline heavy line thickness 12",
+      "barline thin line thickness 1.8 evpus",
+      "beam thickness 3 pts",
+      "ledgerline thickness 0.01585 cm",
+      "repeat heavy line thickness 0.5 spaces",
+      "repeat thin line thickness 0.45 points",
+      "slash thickness 2.25 evpus",
+      "staff line thickness 0.00625 in",
+      "stem line thickness 0.03744 picas"
+    ]
+  },
+  {
+    "title": "tie tool",
+    "description": "Chooses the Tie tool ( Simple Entry tool ).",
+    "synonyms": "tie",
+    "parameters": "(none)",
+    "examples": [
+      "tie tool",
+      "tie"
+    ]
+  },
+  {
+    "title": "time signature tool",
+    "description": "Chooses the Time Signature tool .",
+    "synonyms": "time signature\n\ntime",
+    "parameters": "(none)",
+    "examples": [
+      "time signature tool",
+      "time"
+    ]
+  },
+  {
+    "title": "title",
+    "description": "Writes the specified text to the Title field in File Info .",
+    "synonyms": "(none)",
+    "parameters": "string1",
+    "examples": [
+      "title \"Faerie's Aire and Death Waltz\""
+    ]
+  },
+  {
+    "title": "transpose",
+    "description": "See key .",
+    "synonyms": "",
+    "parameters": "",
+    "examples": []
+  },
+  {
+    "title": "trill extension tool",
+    "description": "Chooses the Trill Extension tool ( Smart Shape tool ).",
+    "synonyms": "trill extension\n\nwavy",
+    "parameters": "(none)",
+    "examples": [
+      "trill extension tool",
+      "trill extension"
+    ]
+  },
+  {
+    "title": "trill tool",
+    "description": "Chooses the Trill tool ( Smart Shape tool ).",
+    "synonyms": "trill",
+    "parameters": "(none)",
+    "examples": [
+      "trill tool",
+      "trill"
+    ]
+  },
+  {
+    "title": "tuplet tool",
+    "description": "Chooses the Tuplet tool .",
+    "synonyms": "tuplet\n\ntriplet",
+    "parameters": "(none)",
+    "examples": [
+      "tuplet tool",
+      "tuplet"
+    ]
+  },
+  {
+    "title": "type",
+    "description": "Enters specified text in the field that currently has focus, unless a neighborhood specifier is included; if the raw attribute is present, modifier key attributes apply to each individual character within the specified text.",
+    "synonyms": "fill",
+    "parameters": "string1\n\nnum1\n\ndocument name / doc name\nfilename / file name\nraw\nalt\n\n\nctrl\nshift",
+    "examples": [
+      "type \"to Verses\"",
+      "type \"William Topaz McGonagall\" near \"Lyricist\"",
+      "type 3 near \"Beat Groups\"",
+      "type filename \"[converted]\"",
+      "type raw ctrl \"v\""
+    ]
+  },
+  {
+    "title": "uncheck",
+    "description": "Clears checkbox with the specified name.",
+    "synonyms": "no\n\ndon't\n\ndo not\n\ndisable",
+    "parameters": "string1",
+    "examples": [
+      "uncheck \"include in measure numbering\"",
+      "don't \"display rests*\""
+    ]
+  },
+  {
+    "title": "undo",
+    "description": "Chooses Edit > Undo .",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "undo"
+    ]
+  },
+  {
+    "title": "unit",
+    "description": "Sets the global measurement unit to the specified unit.",
+    "synonyms": "u",
+    "parameters": "evpus / evpu\npoints / point / pts / pt\nspaces / space / sp / s\npicas / pica\ncentimeters / centimeter / cent / cm\ninches / inch / in / i",
+    "examples": [
+      "unit evpus",
+      "u i"
+    ]
+  },
+  {
+    "title": "unlock system",
+    "description": "Removes system locks either for systems containing the selected measures or for the entire document, updates the layout, and redraws the document.",
+    "synonyms": "unfreeze system\n\nunlock sys\n\nunfreeze sys",
+    "parameters": "(none)",
+    "examples": [
+      "unlock system",
+      "unfreeze sys"
+    ]
+  },
+  {
+    "title": "update layout",
+    "description": "Chooses Utilities > Update Layout .",
+    "synonyms": "refresh pages",
+    "parameters": "(none)",
+    "examples": [
+      "update layout",
+      "refresh pages"
+    ]
+  },
+  {
+    "title": "use cross-layer accidental positioning",
+    "description": "Chooses Use cross-layer accidental positioning in the Document Options - Accidentals dialog box , updates the layout, and redraws the document.",
+    "synonyms": "enhanced accidentals\n\nimproved accidentals\n\nsmart accidentals",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use cross-layer accidental positioning",
+      "disable smart accidentals"
+    ]
+  },
+  {
+    "title": "use engraver slurs",
+    "description": "Chooses Use Engraver Slurs in the Smart Slur Options dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use engraver slurs",
+      "don't use engraver slurs"
+    ]
+  },
+  {
+    "title": "use outer placement",
+    "description": "Chooses Use outer placement in the Document Options - Ties dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use outer placement",
+      "do not use outer placement"
+    ]
+  },
+  {
+    "title": "use smart hyphens",
+    "description": "Chooses Use Smart Hyphens in the Document Options - Lyrics dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use smart hyphens",
+      "disable use smart hyphens"
+    ]
+  },
+  {
+    "title": "use smart word extensions",
+    "description": "Chooses Use Smart Word Extensions in the Word Extensions dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use smart word extensions",
+      "uncheck use smart word extensions"
+    ]
+  },
+  {
+    "title": "use standard flags",
+    "description": "Chooses Use standard flags in the Document Options - Flags dialog box , updates the layout, and redraws the document.",
+    "synonyms": "regular flags\n\nnormal flags",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use standard flags",
+      "no normal flags"
+    ]
+  },
+  {
+    "title": "use straight flags",
+    "description": "Chooses Use straight flags in the Document Options - Flags dialog box , updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "no / don't / do not / disable / uncheck",
+    "examples": [
+      "use straight flags",
+      "don't use straight flags"
+    ]
+  },
+  {
+    "title": "vertical adjustment of dot",
+    "description": "Sets global vertical adjustment of augmentation dots to the specified value using the current or specified measurement unit, updates the layout, and redraws the document.",
+    "synonyms": "(none)",
+    "parameters": "num1\n\n\nmeasurement units\n\n\n\n\n\n\n\nUnit\nSynonyms\n\n\n\n\nEVPUS\nevpu , evpus\n\n\nPoints\npt , pts , point , points\n\n\nSpaces\ns , sp , space , spaces\n\n\nPicas\npica , picas\n\n\nCentimeters\ncm , cent , centimeter , centimeters\n\n\nInches\ni , in , inch , inches\n\n\n\n\nFor a list of equivalent values for spacing units, see Equivalents - Measurement units .",
+    "examples": [
+      "vertical adjustment of dot -2",
+      "vertical adjustment of dot -0.5 pts"
+    ]
+  },
+  {
+    "title": "wait",
+    "description": "Suspends script before next action either for 1 second or for the specified number of seconds.",
+    "synonyms": "pause",
+    "parameters": "num1",
+    "examples": [
+      "wait 3",
+      "pause"
+    ]
+  },
+  {
+    "title": "wait for click",
+    "description": "Waits for the user to click before proceeding.",
+    "synonyms": "(none)",
+    "parameters": "(none)",
+    "examples": [
+      "wait for click"
+    ]
+  },
+  {
+    "title": "whole note tool",
+    "description": "Chooses the Whole Note tool ( Simple Entry tool ).",
+    "synonyms": "whole",
+    "parameters": "(none)",
+    "examples": [
+      "whole note tool",
+      "whole"
+    ]
+  },
+  {
+    "title": "zoom",
+    "description": "Chooses View > Zoom submenu command that corresponds to specified value (in percentage).",
+    "synonyms": "view",
+    "parameters": "num1",
+    "examples": [
+      "zoom 50",
+      "view 400"
+    ]
+  },
+  {
+    "title": "zoom tool",
+    "description": "Chooses the Zoom tool .",
+    "synonyms": "zoom",
+    "parameters": "(none)",
+    "examples": [
+      "zoom tool",
+      "zoom"
+    ]
+  }
+]

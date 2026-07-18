@@ -24565,7 +24565,9 @@
     const ptTitle = translateTitle(command.title);
     return { ...command, ptTitle, category: categorize(command), ptDescription: `Executa no Finale a fun\xE7\xE3o \u201C${ptTitle}\u201D.` };
   });
-  var officialCategories = ["Todas", ...Array.from(new Set(localizedCommands.map((command) => command.category))).sort((a, b) => a.localeCompare(b, "pt-BR"))];
+  var specialRecipes = [{ title: "Exportar MusicXML", ptTitle: "Exportar para MusicXML", ptDescription: "Abre pelo menu do Finale a exporta\xE7\xE3o MusicXML. Combine com Batch Process Folder, Return e End para processar uma pasta.", description: 'Uses Menu Item "File/Export/MusicXML" to open Finale MusicXML export.', synonyms: "m\xFAsica XML\nMusic XML\nXML\nexportar XML\nexporta\xE7\xE3o MusicXML", parameters: "(none)", examples: ['Menu Item "File/Export/MusicXML"'], category: "Receitas prontas", isRecipe: true }];
+  var libraryEntries = [...specialRecipes, ...localizedCommands];
+  var officialCategories = ["Todas", ...Array.from(new Set(libraryEntries.map((command) => command.category))).sort((a, b) => a.localeCompare(b, "pt-BR"))];
   var normalizeSearch = (value) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   var q = (value = "") => `"${value.replaceAll('"', '\\"')}"`;
   var actions = [
@@ -24596,6 +24598,7 @@
     { id: "font", group: "Texto e fontes", title: "Substituir fonte", description: "Procura e substitui uma fonte no documento.", fields: [{ key: "from", label: "Fonte atual", placeholder: "Maestro" }, { key: "to", label: "Nova fonte", placeholder: "Finale Maestro" }], build: (v) => [`replace font [${v.from || "Maestro"}] with [${v.to || "Finale Maestro"}]`] },
     { id: "menu", group: "Interface do Finale", title: "Executar item de menu", description: "Acessa qualquer comando por seu caminho no menu.", fields: [{ key: "path", label: "Caminho do menu", placeholder: "File/Export/Audio File" }], build: (v) => [`menu item ${q(v.path)}`] },
     { id: "plugin", group: "Interface do Finale", title: "Executar plug-in", description: "Abre um plug-in pelo nome.", fields: [{ key: "name", label: "Nome do plug-in", placeholder: "Band-in-a-Box Auto-Harmonizing" }], build: (v) => [`plug-in ${q(v.name)}`] },
+    { id: "exportMusicXml", group: "Arquivos e lote", title: "Exportar MusicXML", description: "Abre a exporta\xE7\xE3o MusicXML pelo menu Arquivo do Finale.", build: () => ['Menu Item "File/Export/MusicXML"'] },
     { id: "button", group: "Interface do Finale", title: "Clicar em bot\xE3o", description: "Aciona um bot\xE3o em uma janela aberta.", fields: [{ key: "name", label: "Bot\xE3o", placeholder: "Apply" }, { key: "near", label: "Pr\xF3ximo de (opcional)", placeholder: "Page Range" }], build: (v) => [`button ${q(v.name)}${v.near ? ` near ${q(v.near)}` : ""}`] },
     { id: "checkbox", group: "Interface do Finale", title: "Marcar/desmarcar op\xE7\xE3o", description: "For\xE7a o estado de uma caixa de sele\xE7\xE3o.", fields: [{ key: "state", label: "Estado", type: "select", options: ["check", "uncheck"] }, { key: "name", label: "R\xF3tulo", placeholder: "Use Engraver Slurs" }], build: (v) => [`${v.state || "check"} ${q(v.name)}`] },
     { id: "type", group: "Interface do Finale", title: "Preencher campo", description: "Digita em uma caixa de texto, com refer\xEAncia opcional.", fields: [{ key: "text", label: "Texto ou n\xFAmero", placeholder: "120" }, { key: "near", label: "Pr\xF3ximo de", placeholder: "Tempo" }], build: (v) => [`type ${q(v.text)}${v.near ? ` near ${q(v.near)}` : ""}`] },
@@ -24643,7 +24646,7 @@
     const script = (0, import_react.useMemo)(() => selected.flatMap((id) => actions.find((a) => a.id === id)?.build(values[id] || {}) || []).concat(manual.trim() ? manual.trim().split("\n") : []).join("\n"), [selected, values, manual]);
     const filteredOfficial = (0, import_react.useMemo)(() => {
       const term = normalizeSearch(officialSearch.trim());
-      return localizedCommands.filter((command) => {
+      return libraryEntries.filter((command) => {
         if (officialCategory !== "Todas" && command.category !== officialCategory) return false;
         if (officialFilter === "parametros" && (!command.parameters || command.parameters === "(none)")) return false;
         if (officialFilter === "exemplos" && !command.examples.length) return false;

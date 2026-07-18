@@ -24858,9 +24858,19 @@
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "FinaleScript Studio \u2022 projeto independente" }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { href: "https://usermanuals.finalemusic.com/FinaleWin/Content/Finale/FinaleScript_command_reference.htm", target: "_blank", children: "Refer\xEAncia oficial \u2197" })
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", { className: "siteFooter", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "footerAuthor", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Desenvolvido pelo professor Glauber Santiago \u2014 DAC/UFSCar" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { href: "http://servidores.ufscar.br/glauber/", target: "_blank", rel: "noreferrer", children: "servidores.ufscar.br/glauber/" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { children: "\u2022" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { href: "https://aprenda-musica-comigo.web.app/", target: "_blank", rel: "noreferrer", children: "aprenda-musica-comigo.web.app" })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "footerProject", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "FinaleScript Studio \u2022 projeto independente" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { href: "https://usermanuals.finalemusic.com/FinaleWin/Content/Finale/FinaleScript_command_reference.htm", target: "_blank", rel: "noreferrer", children: "Refer\xEAncia oficial \u2197" })
+        ] })
       ] }),
       showGuide && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "modalBack", onClick: () => setShowGuide(false), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "modal", onClick: (e) => e.stopPropagation(), children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "modalClose", onClick: () => setShowGuide(false), children: "\xD7" }),

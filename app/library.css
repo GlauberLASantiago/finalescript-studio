@@ -41,6 +41,27 @@
 .officialExamples { display: flex; flex-direction: column; align-items: stretch; gap: 5px; }
 .officialExamples code { padding: 6px 8px; overflow: hidden; border-radius: 4px; background: #e8edeb; color: #28564f; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
 .officialExamples button { align-self: end; margin-top: 3px; padding: 7px 10px; border: 1px solid var(--accent); border-radius: 5px; background: transparent; color: var(--accent); font-size: 10px; font-weight: 700; }
+.libraryFilters { display: grid; grid-template-columns: 1.1fr 1fr 1fr auto auto; align-items: end; gap: 8px; margin-bottom: 12px; padding: 11px; border: 1px solid var(--line); border-radius: 8px; background: #f7f5ef; }
+.libraryFilters label > span { display: block; margin: 0 0 4px 2px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+.libraryFilters select { width: 100%; height: 34px; padding: 0 8px; border: 1px solid var(--line); border-radius: 5px; background: #fff; color: var(--ink); font-size: 10px; }
+.viewToggle { display: flex; height: 34px; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; }
+.viewToggle button { padding: 0 9px; border: 0; border-right: 1px solid var(--line); background: #fff; color: var(--muted); font-size: 10px; }
+.viewToggle button:last-child { border-right: 0; }
+.viewToggle button.active { background: var(--ink); color: #fff; }
+.clearFilters { height: 34px; padding: 0 10px; border: 0; background: transparent; color: var(--accent2); font-size: 10px; font-weight: 700; white-space: nowrap; }
+.categoryBadge { display: inline-block; margin-bottom: 6px; padding: 4px 7px; border-radius: 20px; background: #e2ece9; color: var(--accent); font-size: 8px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.originalCommand { display: inline-block; margin: 0 0 7px; padding: 4px 7px; border-radius: 4px; background: var(--code); color: #d8e8e3; font-size: 10px; }
+.officialInfo details { margin: 7px 0; color: var(--muted); font-size: 9px; }
+.officialInfo details summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+.officialInfo details p { margin: 5px 0; font-size: 9px; }
+.officialExamples > b { margin-bottom: 2px; color: var(--muted); font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.officialList.grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-content: start; gap: 10px; }
+.officialList.grid .officialCard { display: flex; flex-direction: column; gap: 11px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.officialList.grid .officialExamples { margin-top: auto; }
+.officialList.grid .officialExamples button { align-self: stretch; }
+.noResults { grid-column: 1/-1; margin: 30px 0; padding: 35px; border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); text-align: center; }
+.noResults p { font-size: 11px; }
+.noResults button { padding: 8px 12px; border: 1px solid var(--accent); border-radius: 5px; background: transparent; color: var(--accent); }
 
 @media (max-width: 720px) {
   .headerActions .quiet:first-of-type { display: none; }
@@ -48,5 +69,10 @@
   .libraryModal { width: 100%; height: 96vh; padding: 22px 16px; }
   .libraryHeader { align-items: start; }
   .libraryHeader h2 { font-size: 23px; }
+  .libraryHeader > b { display: none; }
+  .libraryFilters { grid-template-columns: 1fr 1fr; }
+  .libraryFilters label:first-child { grid-column: 1/-1; }
+  .viewToggle { grid-column: 1/2; }
   .officialCard { grid-template-columns: 1fr; gap: 10px; }
+  .officialList.grid { grid-template-columns: 1fr; }
 }

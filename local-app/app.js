@@ -24414,6 +24414,159 @@
   // app/page.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
   var officialCommands = finalescript_commands_default;
+  var titlePhrases = [
+    [/batch process/gi, "processamento em lote"],
+    [/document options/gi, "op\xE7\xF5es do documento"],
+    [/page format/gi, "formato da p\xE1gina"],
+    [/time signature/gi, "f\xF3rmula de compasso"],
+    [/key signature/gi, "armadura de clave"],
+    [/music spacing/gi, "espa\xE7amento musical"],
+    [/note tool/gi, "ferramenta de nota"],
+    [/staff system/gi, "sistema de pautas"],
+    [/active layer/gi, "camada ativa"],
+    [/measure number/gi, "n\xFAmero de compasso"],
+    [/smart shape/gi, "forma inteligente"],
+    [/simple entry/gi, "entrada simples"],
+    [/speedy entry/gi, "entrada r\xE1pida"],
+    [/human playback/gi, "reprodu\xE7\xE3o humanizada"],
+    [/menu item/gi, "item de menu"],
+    [/drop-down/gi, "menu suspenso"],
+    [/radio button/gi, "bot\xE3o de op\xE7\xE3o"],
+    [/check box|checkbox/gi, "caixa de sele\xE7\xE3o"],
+    [/page layout/gi, "layout de p\xE1gina"],
+    [/grand staff/gi, "pauta dupla"],
+    [/text search and replace/gi, "localizar e substituir texto"]
+  ];
+  var titleWords = {
+    "8th": "colcheia",
+    "16th": "semicolcheia",
+    "32nd": "fusa",
+    "64th": "semifusa",
+    "128th": "quartifusa",
+    active: "ativa",
+    adjust: "ajustar",
+    align: "alinhar",
+    allow: "permitir",
+    always: "sempre",
+    apply: "aplicar",
+    articulation: "articula\xE7\xE3o",
+    barline: "barra de compasso",
+    beam: "haste de liga\xE7\xE3o",
+    beams: "hastes de liga\xE7\xE3o",
+    bottom: "inferior",
+    button: "bot\xE3o",
+    cancel: "cancelar",
+    chord: "acorde",
+    choose: "escolher",
+    clef: "clave",
+    click: "clicar",
+    close: "fechar",
+    copy: "copiar",
+    create: "criar",
+    crescendo: "crescendo",
+    cursor: "cursor",
+    decrease: "diminuir",
+    delete: "excluir",
+    dialog: "caixa de di\xE1logo",
+    display: "exibir",
+    document: "documento",
+    dot: "ponto",
+    edit: "editar",
+    enable: "ativar",
+    end: "fim",
+    entry: "entrada",
+    erase: "apagar",
+    export: "exportar",
+    expression: "express\xE3o",
+    extend: "estender",
+    file: "arquivo",
+    folder: "pasta",
+    font: "fonte",
+    grace: "apojatura",
+    group: "grupo",
+    hide: "ocultar",
+    import: "importar",
+    increase: "aumentar",
+    insert: "inserir",
+    instrument: "instrumento",
+    layer: "camada",
+    layout: "layout",
+    left: "esquerda",
+    lyrics: "letras",
+    margin: "margem",
+    measure: "compasso",
+    measures: "compassos",
+    midi: "MIDI",
+    move: "mover",
+    music: "m\xFAsica",
+    note: "nota",
+    notes: "notas",
+    open: "abrir",
+    options: "op\xE7\xF5es",
+    page: "p\xE1gina",
+    pages: "p\xE1ginas",
+    play: "reproduzir",
+    playback: "reprodu\xE7\xE3o",
+    "plug-in": "plug-in",
+    press: "pressionar",
+    print: "imprimir",
+    process: "processar",
+    return: "retorno",
+    rest: "pausa",
+    rests: "pausas",
+    right: "direita",
+    save: "salvar",
+    select: "selecionar",
+    show: "mostrar",
+    slash: "barra",
+    spacing: "espa\xE7amento",
+    staff: "pauta",
+    staves: "pautas",
+    stem: "haste",
+    stop: "parar",
+    system: "sistema",
+    systems: "sistemas",
+    tab: "aba",
+    tempo: "andamento",
+    text: "texto",
+    tie: "ligadura",
+    tool: "ferramenta",
+    transpose: "transpor",
+    tuplet: "qui\xE1ltera",
+    type: "digitar",
+    update: "atualizar",
+    window: "janela"
+  };
+  var translateTitle = (title) => {
+    let result = title;
+    for (const [pattern, value] of titlePhrases) result = result.replace(pattern, value);
+    return result.split(/(\s+|\/)/).map((part) => {
+      const key = part.toLowerCase();
+      return titleWords[key] ?? part;
+    }).join("").replace(/\s+/g, " ").trim();
+  };
+  var categorize = (command) => {
+    const text = `${command.title} ${command.description}`.toLowerCase();
+    const has = (words) => words.some((word) => text.includes(word));
+    if (has(["batch", "file", "folder", "save", "open document", "close document", "export", "import", "print"])) return "Arquivos e lote";
+    if (has(["playback", "midi", "tempo", "play ", "human playback"])) return "Reprodu\xE7\xE3o e MIDI";
+    if (has(["staff", "staves", "instrument", "group", "score manager"])) return "Pautas e instrumentos";
+    if (has(["clef", "key signature", "transpose"])) return "Claves e tonalidade";
+    if (has(["measure", "time signature", "barline", "repeat"])) return "Compassos e ritmo";
+    if (has(["note", "rest", "beam", "stem", "tie", "tuplet", "layer", "grace"])) return "Notas e entrada";
+    if (has(["text", "lyric", "font", "expression", "chord", "articulation"])) return "Textos e s\xEDmbolos";
+    if (has(["page", "system", "margin", "layout", "spacing"])) return "Layout e p\xE1ginas";
+    if (has(["tool"])) return "Ferramentas";
+    if (has(["menu", "button", "window", "dialog", "checkbox", "check box", "drop-down", "radio", "cursor", "click", "press", "type ", "select tab"])) return "Interface e automa\xE7\xE3o";
+    if (has(["stop", "break", "return", "expect", "wait", "process all"])) return "Controle do script";
+    return "Documento e op\xE7\xF5es";
+  };
+  var localizedCommands = officialCommands.map((command) => {
+    const ptTitle = translateTitle(command.title);
+    return { ...command, ptTitle, category: categorize(command), ptDescription: `Executa no Finale a fun\xE7\xE3o \u201C${ptTitle}\u201D.` };
+  });
+  var officialCategories = ["Todas", ...Array.from(new Set(localizedCommands.map((command) => command.category))).sort((a, b) => a.localeCompare(b, "pt-BR"))];
+  var normalizeSearch = (value) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   var q = (value = "") => `"${value.replaceAll('"', '\\"')}"`;
   var actions = [
     { id: "comment", group: "Estrutura", title: "Adicionar coment\xE1rio", description: "Documenta uma etapa sem execut\xE1-la.", fields: [{ key: "text", label: "Coment\xE1rio", placeholder: "Preparar a partitura" }], build: (v) => [`// ${v.text || "Coment\xE1rio"}`] },
@@ -24463,6 +24616,10 @@
     const [showGuide, setShowGuide] = (0, import_react.useState)(false);
     const [showLibrary, setShowLibrary] = (0, import_react.useState)(false);
     const [officialSearch, setOfficialSearch] = (0, import_react.useState)("");
+    const [officialCategory, setOfficialCategory] = (0, import_react.useState)("Todas");
+    const [officialSort, setOfficialSort] = (0, import_react.useState)("az");
+    const [officialView, setOfficialView] = (0, import_react.useState)("list");
+    const [officialFilter, setOfficialFilter] = (0, import_react.useState)("todos");
     (0, import_react.useEffect)(() => {
       try {
         const raw = window.localStorage.getItem("finalescript-builder");
@@ -24485,10 +24642,21 @@
     const visible = actions.filter((a) => (group === "Todas" || a.group === group) && `${a.title} ${a.description}`.toLowerCase().includes(search.toLowerCase()));
     const script = (0, import_react.useMemo)(() => selected.flatMap((id) => actions.find((a) => a.id === id)?.build(values[id] || {}) || []).concat(manual.trim() ? manual.trim().split("\n") : []).join("\n"), [selected, values, manual]);
     const filteredOfficial = (0, import_react.useMemo)(() => {
-      const term = officialSearch.trim().toLowerCase();
-      if (!term) return officialCommands;
-      return officialCommands.filter((c) => `${c.title} ${c.description} ${c.synonyms} ${c.parameters} ${c.examples.join(" ")}`.toLowerCase().includes(term));
-    }, [officialSearch]);
+      const term = normalizeSearch(officialSearch.trim());
+      return localizedCommands.filter((command) => {
+        if (officialCategory !== "Todas" && command.category !== officialCategory) return false;
+        if (officialFilter === "parametros" && (!command.parameters || command.parameters === "(none)")) return false;
+        if (officialFilter === "exemplos" && !command.examples.length) return false;
+        if (officialFilter === "sem-parametros" && command.parameters && command.parameters !== "(none)") return false;
+        if (!term) return true;
+        return normalizeSearch(`${command.ptTitle} ${command.ptDescription} ${command.category} ${command.title} ${command.description} ${command.synonyms} ${command.parameters} ${command.examples.join(" ")}`).includes(term);
+      }).sort((a, b) => {
+        const direction = officialSort === "za" ? -1 : 1;
+        const field = officialSort === "original" ? a.title : a.ptTitle;
+        const other = officialSort === "original" ? b.title : b.ptTitle;
+        return field.localeCompare(other, "pt-BR") * direction;
+      });
+    }, [officialSearch, officialCategory, officialSort, officialFilter]);
     const toggle = (id) => setSelected((s) => s.includes(id) ? s.filter((x) => x !== id) : [...s, id]);
     const move = (id, dir) => setSelected((s) => {
       const i = s.indexOf(id), n = i + dir;
@@ -24506,7 +24674,12 @@
     const insertOfficial = (command) => {
       const line = command.examples[0] || command.title;
       setManual((current) => current.trimEnd() + (current.trim() ? "\n" : "") + line);
-      setShowLibrary(false);
+    };
+    const clearOfficialFilters = () => {
+      setOfficialSearch("");
+      setOfficialCategory("Todas");
+      setOfficialSort("az");
+      setOfficialFilter("todos");
     };
     const copy = async () => {
       try {
@@ -24714,12 +24887,12 @@
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "modalClose", onClick: () => setShowLibrary(false), children: "\xD7" }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "libraryHeader", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "eyebrow", children: "REFER\xCANCIA OFICIAL COMPLETA" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "eyebrow", children: "BIBLIOTECA BIL\xCDNGUE COMPLETA" }),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", { children: [
               officialCommands.length,
               " comandos FinaleScript"
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Pesquise pelo nome, finalidade, par\xE2metro, sin\xF4nimo ou exemplo." })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Tradu\xE7\xE3o orientativa em portugu\xEAs; o comando original em ingl\xEAs \xE9 preservado para inser\xE7\xE3o." })
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("b", { children: [
             filteredOfficial.length,
@@ -24728,12 +24901,46 @@
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { className: "search librarySearch", children: [
           "\u2315",
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { autoFocus: true, value: officialSearch, onChange: (e) => setOfficialSearch(e.target.value), placeholder: "Ex.: batch, MusicXML, return, page format\u2026" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", { autoFocus: true, value: officialSearch, onChange: (e) => setOfficialSearch(e.target.value), placeholder: "Pesquise em portugu\xEAs ou ingl\xEAs: pauta, compasso, batch\u2026" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "officialList", children: filteredOfficial.map((command) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "officialCard", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: command.title }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: command.description || "Consulte os exemplos e par\xE2metros deste comando." }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "libraryFilters", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Categoria" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", { value: officialCategory, onChange: (e) => setOfficialCategory(e.target.value), children: officialCategories.map((category) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: category }, category)) })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Ordem" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", { value: officialSort, onChange: (e) => setOfficialSort(e.target.value), children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "az", children: "Portugu\xEAs: A\u2013Z" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "za", children: "Portugu\xEAs: Z\u2013A" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "original", children: "Comando original: A\u2013Z" })
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Conte\xFAdo" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", { value: officialFilter, onChange: (e) => setOfficialFilter(e.target.value), children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "todos", children: "Todos" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "parametros", children: "Com par\xE2metros" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "sem-parametros", children: "Sem par\xE2metros" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: "exemplos", children: "Com exemplos" })
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "viewToggle", "aria-label": "Modo de visualiza\xE7\xE3o", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: officialView === "list" ? "active" : "", onClick: () => setOfficialView("list"), title: "Ver em lista", children: "\u2637 Lista" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: officialView === "grid" ? "active" : "", onClick: () => setOfficialView("grid"), title: "Ver em grade", children: "\u25A6 Grade" })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "clearFilters", onClick: clearOfficialFilters, children: "Limpar filtros" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: `officialList ${officialView}`, children: filteredOfficial.length ? filteredOfficial.map((command) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { className: "officialCard", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "officialInfo", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "categoryBadge", children: command.category }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: command.ptTitle }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("code", { className: "originalCommand", children: command.title }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: command.ptDescription }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("details", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("summary", { children: "Descri\xE7\xE3o original em ingl\xEAs" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: command.description || "Sem descri\xE7\xE3o adicional." })
+            ] }),
             command.parameters && command.parameters !== "(none)" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("small", { children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Par\xE2metros:" }),
               " ",
@@ -24746,13 +24953,18 @@
             ] }) : null
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "officialExamples", children: [
-            command.examples.slice(0, 3).map((example) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("code", { children: example }, example)),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Exemplos prontos" }),
+            command.examples.slice(0, officialView === "grid" ? 2 : 3).map((example) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("code", { children: example }, example)),
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => insertOfficial(command), children: [
               "+ Inserir ",
               command.examples.length ? "exemplo" : "comando"
             ] })
           ] })
-        ] }, command.title)) })
+        ] }, command.title)) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "noResults", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("b", { children: "Nenhum comando encontrado." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Tente outra palavra ou limpe os filtros." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: clearOfficialFilters, children: "Limpar filtros" })
+        ] }) })
       ] }) })
     ] });
   }

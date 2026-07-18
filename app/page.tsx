@@ -48,15 +48,15 @@ export default function Home() {
   const [manual,setManual] = useState("");
   const [copied,setCopied] = useState(false);
   const [showGuide,setShowGuide] = useState(false);
-  useEffect(()=>{ const raw=localStorage.getItem("finalescript-builder"); if(raw) try {const x=JSON.parse(raw); setSelected(x.selected||[]); setValues({...starterValues,...x.values}); setManual(x.manual||"");}catch{} },[]);
-  useEffect(()=>{localStorage.setItem("finalescript-builder",JSON.stringify({selected,values,manual}))},[selected,values,manual]);
+  useEffect(()=>{try{const raw=window.localStorage.getItem("finalescript-builder");if(raw){const x=JSON.parse(raw);setSelected(Array.isArray(x.selected)?x.selected.filter((id:unknown)=>typeof id==="string"&&actions.some(a=>a.id===id)):[]);setValues({...starterValues,...(x.values&&typeof x.values==="object"?x.values:{})});setManual(typeof x.manual==="string"?x.manual:"")}}catch{/* Alguns navegadores bloqueiam localStorage em páginas file://. O app continua sem persistência. */}},[]);
+  useEffect(()=>{try{window.localStorage.setItem("finalescript-builder",JSON.stringify({selected,values,manual}))}catch{/* Mantém o construtor funcional mesmo quando o armazenamento local é bloqueado. */}},[selected,values,manual]);
   const groups=["Todas",...Array.from(new Set(actions.map(a=>a.group)))];
   const visible=actions.filter(a=>(group==="Todas"||a.group===group)&&(`${a.title} ${a.description}`.toLowerCase().includes(search.toLowerCase())));
   const script=useMemo(()=>selected.flatMap(id=>actions.find(a=>a.id===id)?.build(values[id]||{})||[]).concat(manual.trim()?manual.trim().split("\n"):[]).join("\n"),[selected,values,manual]);
   const toggle=(id:string)=>setSelected(s=>s.includes(id)?s.filter(x=>x!==id):[...s,id]);
   const move=(id:string,dir:number)=>setSelected(s=>{const i=s.indexOf(id), n=i+dir;if(i<0||n<0||n>=s.length)return s;const c=[...s];[c[i],c[n]]=[c[n],c[i]];return c});
   const loadTemplate=(ids:string[])=>setSelected(ids);
-  const copy=async()=>{await navigator.clipboard.writeText(script);setCopied(true);setTimeout(()=>setCopied(false),1600)};
+  const copy=async()=>{try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(script)}else{const box=document.createElement("textarea");box.value=script;box.style.position="fixed";box.style.opacity="0";document.body.appendChild(box);box.select();document.execCommand("copy");box.remove()}setCopied(true);setTimeout(()=>setCopied(false),1600)}catch{alert("Não foi possível copiar automaticamente. Selecione o texto na área do script e copie com Ctrl+C.")}};
   const download=()=>{const blob=new Blob([script],{type:"text/plain;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="meu-finalescript.txt";a.click();URL.revokeObjectURL(a.href)};
 
   return <main>

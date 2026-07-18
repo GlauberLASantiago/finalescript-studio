@@ -1,14 +1,74 @@
-# vinext-starter
+# FinaleScript Studio
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+Aplicativo visual e bilíngue para criar automações do **FinaleScript** sem precisar memorizar todos os comandos.
 
-## Prerequisites
+## Acessar o aplicativo
 
-- Node.js `>=22.13.0`
+Use diretamente pelo navegador:
 
-## Quick Start
+**[Abrir o FinaleScript Studio](https://glauberlasantiago.github.io/finalescript-studio/)**
+
+Também é possível baixar o repositório e abrir o arquivo `index.html` no computador. Mantenha as pastas `app` e `local-app` ao lado do arquivo para que a interface funcione corretamente.
+
+## Principais recursos
+
+- Construtor visual com caixas de seleção e campos guiados.
+- Geração instantânea do script na ordem escolhida.
+- Modelos prontos, incluindo exportação em lote para MusicXML.
+- Biblioteca com **262 comandos oficiais** do FinaleScript.
+- Nomes orientativos em português e comandos originais em inglês.
+- Pesquisa em português ou inglês, mesmo sem acentos.
+- Filtros por categoria, parâmetros e exemplos.
+- Ordenação alfabética A–Z ou Z–A.
+- Visualização da biblioteca em lista ou grade.
+- Inclusão de comandos manuais.
+- Cópia do script e download em arquivo `.txt`.
+- Salvamento automático das escolhas quando permitido pelo navegador.
+- Funcionamento local, sem necessidade de instalar o Finale no mesmo computador.
+
+## Exemplo: exportação MusicXML em lote
+
+O modelo correspondente produz esta sequência:
+
+```text
+Batch Process Folder
+// Process all open docs
+Menu Item "File/Export/MusicXML"
+Return
+End
+```
+
+O texto original dos comandos é mantido em inglês porque é esse formato que o FinaleScript reconhece. As traduções exibidas na biblioteca servem como orientação para facilitar a busca.
+
+## Como usar
+
+1. Escolha um modelo ou marque as ações desejadas.
+2. Preencha os campos exibidos em cada ação.
+3. Organize a ordem de execução usando as setas.
+4. Consulte a biblioteca completa quando precisar de comandos adicionais.
+5. Copie ou baixe o script criado.
+6. No Finale, abra **Plug-ins › FinaleScript › FinaleScript Palette**.
+7. Crie um script, cole o conteúdo e revise antes de executar.
+
+## Versão local
+
+Depois de baixar ou clonar o repositório, abra:
+
+```text
+index.html
+```
+
+Não é necessário executar servidor, instalar dependências ou usar linha de comando para a versão local.
+
+## Desenvolvimento
+
+Para trabalhar na versão completa do projeto:
+
+### Requisitos
+
+- Node.js 22.13 ou superior.
+
+### Comandos
 
 ```bash
 npm install
@@ -16,83 +76,19 @@ npm run dev
 npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+O aplicativo utiliza React, TypeScript, Vinext e Vite. A versão independente aberta pelo `index.html` é gerada em `local-app/app.js`.
 
-## Included Shape
+## Fontes de referência
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
+- [Como usar o FinaleScript](https://usermanuals.finalemusic.com/FinaleWin/Content/Finale/Using_FinaleScript.htm)
+- [Referência oficial de comandos FinaleScript](https://usermanuals.finalemusic.com/FinaleWin/Content/Finale/FinaleScript_command_reference.htm)
 
-## Workspace Auth Headers
+## Avisos
 
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
+- Nomes de menus e janelas podem variar conforme o idioma e a versão do Finale.
+- Sempre teste scripts em cópias dos documentos antes de processar muitos arquivos.
+- Finale e FinaleScript são produtos de seus respectivos proprietários. Este é um projeto independente.
 
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
+## Licença
 
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
-```
-
-## Optional Dispatch-Owned ChatGPT Sign-In
-
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
-
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
-
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+Consulte as condições do repositório antes de redistribuir ou modificar o projeto.
